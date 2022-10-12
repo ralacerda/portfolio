@@ -14,9 +14,12 @@ body {
   --fg-secondary: var(--neutral-800);
   --fg-details: var(--neutral-700);
   --bg: var(--neutral-100);
+  --bg-secondary: var(--neutral-200);
+  --bg-details: var(--neutral-300);
 
-  --sans: sans-serif;
-  --serif: serif;
+  --display: "Khula", sans-serif;
+  --sans: "Martel Sans", sans-serif;
+  --serif: "Martel", serif;
 }
 
 .dark {
@@ -24,11 +27,14 @@ body {
   --fg-secondary: var(--neutral-200);
   --fg-details: var(--neutral-300);
   --bg: var(--neutral-900);
+  --bg-secondary: var(--neutral-800);
+  --bg-details: var(--neutral-700);
 }
 
 body {
   color: var(--fg);
   background: var(--bg);
   transition: background-color 1s;
-  font-family: var(--serif);
+  font-family: var(--sans);
+  font-display: swap;
 }
