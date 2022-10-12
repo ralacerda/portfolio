@@ -20,7 +20,6 @@ import ThemeButton from "./ThemeButton.vue";
 <style>
 .navbar {
   overflow: clip;
-  top: 0;
   background-color: var(--bg);
   transition: background-color 1s ease;
   margin-top: 5px;
@@ -40,7 +39,7 @@ import ThemeButton from "./ThemeButton.vue";
 .navbar-link {
   text-decoration: none;
   margin-right: 3rem;
-  font-family: var(--sans);
+  font-family: var(--serif);
   color: var(--fg);
 }
 

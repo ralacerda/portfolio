@@ -23,7 +23,7 @@ const iconList = [
   </div>
 </template>
 
-<style>
+<style scoped>
 .icon {
   animation-name: fadeIn, slideIn;
   animation-duration: 0.5s;
