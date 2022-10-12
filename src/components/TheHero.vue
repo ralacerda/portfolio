@@ -4,7 +4,7 @@ import HeroIcons from "./HeroIcons.vue";
 
 <template>
   <div class="hero">
-    <img src="avatar.png" />
+    <img src="../assets/avatar.png" />
     <div>
       <div class="name">Olá, eu sou o Renato</div>
       <div class="position">Desenvolver Front-end</div>
