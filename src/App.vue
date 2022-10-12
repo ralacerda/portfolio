@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import NavBar from "./components/NavBar.vue";
+import TheHero from "./components/TheHero.vue";
+</script>
 
-<template></template>
-
-<style scoped></style>
+<template>
+  <NavBar />
+  <TheHero />
+</template>
