@@ -26,6 +26,22 @@ import HeroIcons from "./HeroIcons.vue";
   font-size: 2.5rem;
   color: var(--fg);
   animation: 0.7s ease-out 2s forwards fadeIn;
+  position: relative;
+  display: block;
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+.position::after {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--danger);
+  transform: translateX(-100%);
+  animation: 0.8s ease 2.3s forwards slideIn;
 }
 
 .hero {
@@ -64,6 +80,15 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 </style>
