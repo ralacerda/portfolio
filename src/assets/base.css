@@ -1,26 +1,29 @@
 body {
-  --dark: #222831;
-  --darker: #111418;
-  --dark-accent: #30475e;
-  --light: #e8e8e8;
-  --lighter: #f5f5f5;
-  --light-accent: #6f8ab7;
+  --neutral-100: #e8e8e8;
+  --neutral-200: #cfd0d1;
+  --neutral-300: #b7b8ba;
+  --neutral-400: #9ea0a3;
+  --neutral-500: #85888d;
+  --neutral-600: #6c7076;
+  --neutral-700: #54585f;
+  --neutral-800: #3b4048;
+  --neutral-900: #222831;
   --danger: #f05454;
 
-  --fg: var(--dark);
-  --bg: var(--light);
-  --bg-other: var(--lighter);
-  --accent: #007ea7;
+  --fg: var(--neutral-900);
+  --fg-secondary: var(--neutral-800);
+  --fg-details: var(--neutral-700);
+  --bg: var(--neutral-100);
 
   --sans: sans-serif;
   --serif: serif;
 }
 
 .dark {
-  --fg: var(--light);
-  --bg: var(--dark);
-  --bg-other: var(--darker);
-  --accent: #007ea7;
+  --fg: var(--neutral-100);
+  --fg-secondary: var(--neutral-200);
+  --fg-details: var(--neutral-300);
+  --bg: var(--neutral-900);
 }
 
 body {

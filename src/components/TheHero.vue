@@ -24,7 +24,7 @@ import HeroIcons from "./HeroIcons.vue";
 .position {
   opacity: 0;
   font-size: 2.5rem;
-  color: var(--danger);
+  color: var(--fg);
   animation: 0.7s ease-out 2s forwards fadeIn;
 }
 

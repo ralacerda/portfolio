@@ -1,11 +1,10 @@
 <script setup>
 const iconList = [
-  "devicon-linux-plain",
   "devicon-bash-plain",
   "devicon-git-plain",
   "devicon-github-original",
-  "devicon-html5-plain",
-  "devicon-css3-plain",
+  "devicon-html5-plain-wordmark",
+  "devicon-css3-plain-wordmark",
   "devicon-sass-original",
   "devicon-tailwindcss-plain",
   "devicon-javascript-plain",
@@ -31,7 +30,7 @@ const iconList = [
   animation-fill-mode: forwards;
   font-size: 5rem;
   opacity: 0;
-  color: var(--fg);
+  color: var(--fg-secondary);
 }
 
 @keyframes fadeIn {
