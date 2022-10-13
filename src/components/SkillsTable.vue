@@ -10,9 +10,10 @@ const skills = {
   "Front-end": ["HTML5", "CSS3", "Tailwind", "Javascript", "Vuejs"],
   Personal: [
     "Fluent English",
-    "Fast learner",
+    "Avid reader",
+    "Always learning",
     "Problem solver",
-    "Good looking",
+    "Good communicator",
     "Open source enthusiast",
   ],
 };
