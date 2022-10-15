@@ -4,7 +4,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 
 <template>
   <div class="navbar">
-    <div class="navbar-items">
+    <div class="navbar-items content">
       <div>
         <a href="#" class="navbar-link">Skills</a>
         <a href="#" class="navbar-link">Projects</a>
@@ -31,9 +31,6 @@ import ThemeButton from "@/components/ThemeButton.vue";
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.2rem;
 }
 
 .navbar-link {

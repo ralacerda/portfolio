@@ -9,12 +9,15 @@ h3 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 4rem;
   font-weight: 600;
 }
 
 h3 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
   font-weight: 400;
+}
+
+.content {
+  width: min(90vw, 1200px);
+  margin: 0 auto;
 }

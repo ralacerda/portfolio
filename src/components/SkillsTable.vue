@@ -20,7 +20,7 @@ const skills = {
 </script>
 
 <template>
-  <div id="skills">
+  <div class="skills content">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div
@@ -38,19 +38,15 @@ const skills = {
 </template>
 
 <style scoped>
-#skills {
-  max-width: 1000px;
-  margin: 0 auto;
-  height: 80vh;
-}
-
 .skill-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   justify-items: center;
+  align-content: center;
   font-size: 1.1rem;
   text-align: center;
+  height: 60vh;
 }
 
 .column {
@@ -58,6 +54,7 @@ const skills = {
   border: 0.1rem solid var(--bg-details);
   border-radius: 2%;
   overflow: clip;
+  height: 100%;
 }
 
 .skill {

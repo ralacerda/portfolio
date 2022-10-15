@@ -1,10 +1,10 @@
 <script setup>
-import HeroIcons from "./HeroIcons.vue";
-import Avatar from "../assets/avatar.png";
+import HeroIcons from "@/components/HeroIcons.vue";
+import Avatar from "@/assets/avatar.png";
 </script>
 
 <template>
-  <div class="hero">
+  <div class="hero content">
     <img :src="Avatar" />
     <div>
       <h1 class="name">Hi, I'm Renato</h1>
@@ -47,8 +47,8 @@ import Avatar from "../assets/avatar.png";
 }
 
 .hero {
-  max-width: 1400px;
-  margin: 90px auto 20px;
+  margin-top: 90px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50vh 30vh;
