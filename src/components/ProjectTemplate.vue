@@ -4,9 +4,10 @@
   <h3>
     <slot name="name"></slot>
   </h3>
-  <slot name="description"></slot>
+  <div class="flow">
+    <slot name="description"></slot>
+    <slot name="image"></slot>
+  </div>
 </template>
 
-<style>
-
-</style>
+<style scoped></style>
