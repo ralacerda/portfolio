@@ -1,12 +1,13 @@
 <script setup>
 import HeroIcons from "./HeroIcons.vue";
+import Avatar from "../assets/avatar.png";
 </script>
 
 <template>
   <div class="hero">
-    <img src="../assets/avatar.png" />
+    <img :src="Avatar" />
     <div>
-      <div class="name">Hi, I'm Renato</div>
+      <h1 class="name">Hi, I'm Renato</h1>
       <div class="position">Front-end developer</div>
     </div>
     <div class="skills">
