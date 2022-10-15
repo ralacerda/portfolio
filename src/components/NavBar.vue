@@ -1,5 +1,5 @@
 <script setup>
-import ThemeButton from "./ThemeButton.vue";
+import ThemeButton from "@/components/ThemeButton.vue";
 </script>
 
 <template>

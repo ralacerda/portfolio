@@ -1,5 +1,5 @@
 <script setup>
-import ProjectKuhn from "./Projects/ProjectKuhn.vue";
+import ProjectKuhn from "@/components/Projects/ProjectKuhn.vue";
 </script>
 
 <template>

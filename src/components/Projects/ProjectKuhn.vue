@@ -1,5 +1,5 @@
 <script setup>
-import ProjectTemplate from "../ProjectTemplate.vue";
+import ProjectTemplate from "@/components/ProjectTemplate.vue";
 </script>
 
 <template>
