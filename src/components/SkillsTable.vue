@@ -44,14 +44,6 @@ const skills = {
   height: 80vh;
 }
 
-h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 4rem;
-  font-family: var(--serif);
-  font-weight: 600;
-}
-
 .skill-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
