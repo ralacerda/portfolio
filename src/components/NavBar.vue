@@ -6,11 +6,12 @@ import ThemeButton from "@/components/ThemeButton.vue";
   <div class="navbar">
     <div class="navbar-items content">
       <div>
-        <a href="#" class="navbar-link">Skills</a>
-        <a href="#" class="navbar-link">Projects</a>
-        <a href="#" class="navbar-link">Certificates</a>
-        <a href="#" class="navbar-link">About me</a>
-        <a href="#" class="navbar-link">Contact</a>
+        <a href="#" class="inline-link navbar-link">Intro</a>
+        <a href="#" class="inline-link navbar-link">Skills</a>
+        <a href="#" class="inline-link navbar-link">Projects</a>
+        <a href="#" class="inline-link navbar-link">Certificates</a>
+        <a href="#" class="inline-link navbar-link">About me</a>
+        <a href="#" class="inline-link navbar-link">Contact</a>
       </div>
       <ThemeButton />
     </div>
@@ -22,7 +23,11 @@ import ThemeButton from "@/components/ThemeButton.vue";
   overflow: clip;
   background-color: var(--bg);
   transition: background-color 1s ease;
-  margin-top: 5px;
+  padding: 10px 0;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-bottom: solid 1px var(--bg-details);
 }
 
 .navbar-items {
@@ -34,15 +39,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 }
 
 .navbar-link {
-  text-decoration: none;
   margin-right: 3rem;
   font-family: var(--serif);
-  color: var(--fg);
-}
-
-.navbar-link:hover {
-  border-bottom: 2px solid var(--danger);
-  display: inline-block;
-  line-height: 1;
 }
 </style>
