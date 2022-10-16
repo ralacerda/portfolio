@@ -44,9 +44,11 @@ const skills = {
   gap: 10px;
   justify-items: center;
   align-content: center;
+  margin: 0 auto;
   font-size: 1.1rem;
   text-align: center;
   height: 60vh;
+  max-width: 50vw;
 }
 
 .column {
