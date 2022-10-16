@@ -8,7 +8,7 @@ body {
   --neutral-700: #54585f;
   --neutral-800: #3b4048;
   --neutral-900: #222831;
-  --danger: #f05454;
+  --danger: #ef5e5e;
 
   --fg: var(--neutral-900);
   --fg-secondary: var(--neutral-800);
@@ -37,4 +37,9 @@ body {
   transition: background-color 1s;
   font-family: var(--sans);
   font-display: swap;
+}
+
+body :any-link:not([class]) {
+  color: var(--fg);
+  text-decoration: underline solid var(--danger);
 }

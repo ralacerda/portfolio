@@ -4,10 +4,10 @@
 h2,
 h3 {
   font-family: var(--serif);
-  text-align: center;
 }
 
 h2 {
+  text-align: center;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -18,6 +18,35 @@ h3 {
 }
 
 .content {
-  width: min(90vw, 1200px);
+  width: min(95vw, 1300px);
   margin: 0 auto;
+}
+
+.inline-link {
+  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 75% /
+    var(--p, 0%) 2px no-repeat;
+  text-decoration: none;
+  color: var(--fg);
+  transition: 250ms, background-position 0s, color 0s;
+}
+
+.inline-link:hover {
+  --p: 100%;
+}
+
+.button-link {
+  text-decoration: none;
+  transition: 200ms, background-position 0s;
+  background: linear-gradient(var(--danger) 0 0) 0% 100% / 100% var(--p, 0%)
+    no-repeat;
+  border: solid 1px var(--danger);
+  width: fit-content;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  color: var(--danger);
+}
+
+.button-link:hover {
+  color: var(--neutral-900);
+  --p: 100%;
 }
