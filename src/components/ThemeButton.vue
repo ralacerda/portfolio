@@ -26,7 +26,7 @@ div {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease, color 0.5s;
+  transition: 0.8s ease;
 }
 
 .fade-enter-from {
@@ -40,8 +40,9 @@ div {
 }
 
 .theme-button {
-  transform-origin: 50% 50px;
+  transform-origin: 50% 70px;
   vertical-align: middle;
   margin: 10px;
+  font-size: 1.2rem;
 }
 </style>

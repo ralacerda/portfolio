@@ -23,7 +23,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
   overflow: clip;
   background-color: var(--bg);
   transition: background-color 1s ease;
-  padding: 10px 0;
+  padding: 6px 0;
   position: sticky;
   z-index: 10;
   top: 0;
