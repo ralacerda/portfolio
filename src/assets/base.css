@@ -8,7 +8,8 @@ body {
   --neutral-700: #54585f;
   --neutral-800: #3b4048;
   --neutral-900: #222831;
-  --danger: #ef5e5e;
+  --danger-light: #ef5e5e;
+  --danger-dark: #c1295e;
 
   --fg: var(--neutral-900);
   --fg-secondary: var(--neutral-800);
@@ -16,6 +17,7 @@ body {
   --bg: var(--neutral-100);
   --bg-secondary: var(--neutral-200);
   --bg-details: var(--neutral-300);
+  --danger: var(--danger-dark);
 
   --display: "Khula", sans-serif;
   --sans: "Martel Sans", sans-serif;
@@ -29,6 +31,7 @@ body {
   --bg: var(--neutral-900);
   --bg-secondary: var(--neutral-800);
   --bg-details: var(--neutral-700);
+  --danger: var(--danger-light);
 }
 
 body {
