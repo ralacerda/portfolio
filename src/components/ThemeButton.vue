@@ -1,6 +1,7 @@
 <script setup>
 import { useDark, useToggle } from "@vueuse/core";
-import { IconMoonLine, IconSunLine } from "@iconify-prerendered/vue-ri";
+import IconSun from "~icons/bx/sun";
+import IconMoon from "~icons/bx/moon";
 
 const isDark = useDark({ selector: "body" });
 const toggleDark = useToggle(isDark);
@@ -11,7 +12,7 @@ const toggleDark = useToggle(isDark);
     <Transition name="fade" mode="out-in">
       <KeepAlive>
         <component
-          :is="isDark ? IconMoonLine : IconSunLine"
+          :is="isDark ? IconMoon : IconSun"
           class="theme-button"
         ></component>
       </KeepAlive>

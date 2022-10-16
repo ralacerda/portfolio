@@ -1,26 +1,35 @@
 <script setup>
+import IconBash from "~icons/mdi/bash";
+import Git from "~icons/mdi/git";
+import Github from "~icons/mdi/github";
+import Html from "~icons/mdi/language-html5";
+import Css from "~icons/mdi/language-css3";
+import Sass from "~icons/mdi/sass";
+import Javascript from "~icons/mdi/language-javascript";
+import Vue from "~icons/mdi/vuejs";
+import Baguette from "~icons/mdi/baguette";
+
 const iconList = [
-  "devicon-bash-plain",
-  "devicon-git-plain",
-  "devicon-github-original",
-  "devicon-html5-plain-wordmark",
-  "devicon-css3-plain-wordmark",
-  "devicon-sass-original",
-  "devicon-tailwindcss-plain",
-  "devicon-javascript-plain",
-  "devicon-vuejs-plain",
+  IconBash,
+  Git,
+  Github,
+  Html,
+  Css,
+  Sass,
+  Javascript,
+  Vue,
+  Baguette,
 ];
 </script>
 
 <template>
-  <div
+  <component
     v-for="(icon, index) in iconList"
     :key="icon"
+    :is="icon"
     class="icon"
     :style="{ animationDelay: index * 0.1 + 2.3 + 's' }"
-  >
-    <i :class="icon"></i>
-  </div>
+  ></component>
 </template>
 
 <style scoped>
