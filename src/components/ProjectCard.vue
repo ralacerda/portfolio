@@ -65,7 +65,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 }
 
 .project-preview:hover {
-  box-shadow: 3px 3px 6px 0 rgb(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 6px 0 var(--hl);
   transform: translate(var(--screenshot-offset));
 }
 

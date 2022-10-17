@@ -28,7 +28,7 @@ const skills = {
         :key="category"
         class="column"
       >
-        <div class="header">{{ category }}</div>
+        <div class="header skill">{{ category }}</div>
         <div v-for="skill in skillList" :key="skill" class="skill">
           {{ skill }}
         </div>
@@ -57,11 +57,12 @@ const skills = {
   border-radius: 2%;
   overflow: clip;
   height: 100%;
+  box-shadow: 0 0 18px var(--hl);
 }
 
 .skill {
   margin: 0 auto;
-  line-height: 3;
+  line-height: 3.5;
   max-width: 25ch;
 }
 
@@ -70,9 +71,8 @@ const skills = {
 }
 
 .header {
-  line-height: 3.5;
-  margin: 0 auto;
-  background-color: var(--bg-secondary);
+  font-size: 1.2rem;
   font-weight: 600;
+  border-bottom: 0.1rem solid var(--danger);
 }
 </style>

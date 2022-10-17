@@ -8,6 +8,7 @@ body {
   --neutral-700: #54585f;
   --neutral-800: #3b4048;
   --neutral-900: #222831;
+  --neutral-highlight: #3b404820;
   --danger-light: #ef5e5e;
   --danger-dark: #c1295e;
 
@@ -18,6 +19,7 @@ body {
   --bg-secondary: var(--neutral-200);
   --bg-details: var(--neutral-300);
   --danger: var(--danger-dark);
+  --hl: var(--neutral-highlight);
 
   --display: "Khula", sans-serif;
   --sans: "Martel Sans", sans-serif;
