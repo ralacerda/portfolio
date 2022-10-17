@@ -6,7 +6,7 @@ import Avatar from "@/assets/avatar.png";
 <template>
   <div class="hero-bg">
     <div class="hero content">
-      <img :src="Avatar" />
+      <img :src="Avatar" class="avatar" />
       <div>
         <h1 class="name">Hi, I'm Renato</h1>
         <div class="position">Front-end developer</div>
@@ -74,7 +74,7 @@ import Avatar from "@/assets/avatar.png";
   flex-wrap: wrap;
 }
 
-img {
+.avatar {
   height: 400px;
   justify-self: right;
   box-shadow: 4px -8px 0 9px var(--danger);
