@@ -6,7 +6,7 @@ import Avatar from "@/assets/avatar.png";
 <template>
   <div class="hero-bg">
     <div class="hero content">
-      <img :src="Avatar" class="avatar" />
+      <img class="avatar" :src="Avatar" />
       <div>
         <h1 class="name">Hi, I'm Renato</h1>
         <div class="position">Front-end developer</div>
@@ -75,7 +75,7 @@ import Avatar from "@/assets/avatar.png";
 }
 
 .avatar {
-  height: 400px;
+  height: 100%;
   justify-self: right;
   box-shadow: 4px -8px 0 9px var(--danger);
   background-color: var(--danger);
