@@ -22,7 +22,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 .navbar {
   overflow: clip;
   background-color: var(--bg);
-  transition: background-color 1s ease;
+  transition: background-color 1s;
   padding: 6px 0;
   position: sticky;
   z-index: 10;

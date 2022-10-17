@@ -36,7 +36,7 @@ body {
 
 body {
   color: var(--fg);
-  background: var(--bg);
+  background-color: var(--bg);
   transition: background-color 1s;
   font-family: var(--sans);
   font-display: swap;

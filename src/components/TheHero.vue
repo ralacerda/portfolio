@@ -4,14 +4,16 @@ import Avatar from "@/assets/avatar.png";
 </script>
 
 <template>
-  <div class="hero content">
-    <img :src="Avatar" />
-    <div>
-      <h1 class="name">Hi, I'm Renato</h1>
-      <div class="position">Front-end developer</div>
-    </div>
-    <div class="skills">
-      <HeroIcons />
+  <div class="hero-bg">
+    <div class="hero content">
+      <img :src="Avatar" />
+      <div>
+        <h1 class="name">Hi, I'm Renato</h1>
+        <div class="position">Front-end developer</div>
+      </div>
+      <div class="skills">
+        <HeroIcons />
+      </div>
     </div>
   </div>
 </template>
@@ -46,9 +48,14 @@ import Avatar from "@/assets/avatar.png";
   animation: 0.9s 2.3s forwards slideIn;
 }
 
+.hero-bg {
+  background-color: var(--bg);
+  transition: background-color 1s;
+}
+
 .hero {
-  margin-top: 90px;
-  margin-bottom: 20px;
+  padding-top: 90px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50vh 30vh;
