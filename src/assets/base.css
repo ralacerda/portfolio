@@ -9,8 +9,7 @@ body {
   --neutral-800: #3b4048;
   --neutral-900: #222831;
   --neutral-highlight: #3b404820;
-  --danger-light: #ef5e5e;
-  --danger-dark: #c1295e;
+  --danger: #ef5e5e;
 
   --fg: var(--neutral-900);
   --fg-secondary: var(--neutral-800);
@@ -18,7 +17,6 @@ body {
   --bg: var(--neutral-100);
   --bg-secondary: var(--neutral-200);
   --bg-details: var(--neutral-300);
-  --danger: var(--danger-dark);
   --hl: var(--neutral-highlight);
 
   --display: "Khula", sans-serif;
@@ -33,7 +31,6 @@ body {
   --bg: var(--neutral-900);
   --bg-secondary: var(--neutral-800);
   --bg-details: var(--neutral-700);
-  --danger: var(--danger-light);
 }
 
 body {
