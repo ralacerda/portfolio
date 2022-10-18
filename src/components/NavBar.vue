@@ -6,12 +6,12 @@ import ThemeButton from "@/components/ThemeButton.vue";
   <div class="navbar">
     <div class="navbar-items content">
       <div>
-        <a href="#" class="inline-link navbar-link">Intro</a>
-        <a href="#" class="inline-link navbar-link">Skills</a>
-        <a href="#" class="inline-link navbar-link">Projects</a>
-        <a href="#" class="inline-link navbar-link">Certificates</a>
-        <a href="#" class="inline-link navbar-link">About me</a>
-        <a href="#" class="inline-link navbar-link">Contact</a>
+        <a href="#" class="navbar-link">Intro</a>
+        <a href="#" class="navbar-link">Skills</a>
+        <a href="#" class="navbar-link">Projects</a>
+        <a href="#" class="navbar-link">Certificates</a>
+        <a href="#" class="navbar-link">About me</a>
+        <a href="#" class="navbar-link">Contact</a>
       </div>
       <ThemeButton />
     </div>
@@ -39,7 +39,16 @@ import ThemeButton from "@/components/ThemeButton.vue";
 }
 
 .navbar-link {
+  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 75% /
+    var(--p, 0%) 2px no-repeat;
+  text-decoration: none;
+  color: var(--fg);
+  transition: 250ms, background-position 0s, color 0s;
   margin-right: 3rem;
   font-family: var(--serif);
+}
+
+.navbar-link:hover {
+  --p: 100%;
 }
 </style>

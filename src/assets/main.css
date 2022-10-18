@@ -25,11 +25,8 @@ h3 {
 }
 
 .inline-link {
-  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 75% /
-    var(--p, 0%) 2px no-repeat;
-  text-decoration: none;
+  text-decoration: underline 0.1rem var(--danger);
   color: var(--fg);
-  transition: 250ms, background-position 0s, color 0s;
 }
 
 .inline-link:hover {
