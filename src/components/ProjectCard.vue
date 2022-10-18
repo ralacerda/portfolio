@@ -44,14 +44,6 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   column-gap: 120px;
 }
 
-.project:nth-child(even) {
-  --screenshot-offset: 12px, -12px;
-  grid-template-columns: 4fr 5fr;
-  grid-template-areas:
-    "screenshot title"
-    "screenshot description";
-}
-
 .title {
   grid-area: title;
   text-align: center;
