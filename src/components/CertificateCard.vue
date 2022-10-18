@@ -46,6 +46,7 @@ defineProps(["title", "img", "url"]);
   height: 100%;
   width: 100%;
   padding: 16px;
+  text-align: center;
 }
 
 .certificate-card {

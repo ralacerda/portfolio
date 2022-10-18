@@ -4,16 +4,14 @@ import Avatar from "@/assets/avatar.png";
 </script>
 
 <template>
-  <div class="hero-bg">
-    <div class="hero content">
-      <img class="avatar" :src="Avatar" />
-      <div>
-        <h1 class="name">Hi, I'm Renato</h1>
-        <div class="position">Front-end developer</div>
-      </div>
-      <div class="skills">
-        <HeroIcons />
-      </div>
+  <div class="hero">
+    <img class="avatar" :src="Avatar" />
+    <div>
+      <h1 class="name">Hi, I'm Renato</h1>
+      <div class="position">Front-end developer</div>
+    </div>
+    <div class="skills">
+      <HeroIcons />
     </div>
   </div>
 </template>
@@ -48,20 +46,20 @@ import Avatar from "@/assets/avatar.png";
   animation: 0.9s 2.3s forwards slideIn;
 }
 
-.hero-bg {
+.hero {
+  display: grid;
+  margin: auto auto;
+  padding-top: calc(10vh - 2.5rem);
+  grid-template-columns: repeat(2, calc(1200px / 2));
+  grid-template-rows: 5fr 4fr;
+  height: calc(100vh - 2.5rem);
+  align-items: center;
+  place-content: center;
+  column-gap: 90px;
+  row-gap: 40px;
+  font-family: var(--display);
   background-color: var(--bg);
   transition: background-color 1s;
-}
-
-.hero {
-  padding-top: 90px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50vh 30vh;
-  align-items: center;
-  gap: 60px;
-  font-family: var(--display);
 }
 
 .skills {
@@ -77,7 +75,7 @@ import Avatar from "@/assets/avatar.png";
 .avatar {
   height: 100%;
   justify-self: right;
-  box-shadow: 4px -8px 0 9px var(--danger);
+  box-shadow: 4px -8px 0 10px var(--danger);
   background-color: var(--danger);
   border-radius: 100%;
   opacity: 0;

@@ -68,6 +68,7 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
   column-gap: 32px;
   row-gap: 64px;
   justify-items: center;
+  margin-bottom: 32px;
 }
 
 .sololearn {
