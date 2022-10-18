@@ -2,6 +2,7 @@
 import ProjectCard from "./ProjectCard.vue";
 import kuhn from "@/assets/projects/kuhn.png";
 import f1next from "@/assets/projects/f1next.png";
+import portfolio from "@/assets/projects/portfolio.png";
 </script>
 
 <template>
@@ -38,8 +39,18 @@ import f1next from "@/assets/projects/f1next.png";
       <p>
         It includes flags for showing the full weekend schedule or a countdown
         to the next event.
-      </p></ProjectCard
+      </p>
+    </ProjectCard>
+
+    <ProjectCard
+      title="My Portfolio"
+      :imgUrl="portfolio"
+      repoUrl="https://github.com/ralacerda/portfolio"
+      class="project"
     >
+      <p>The portfolio you are visiting right now.</p>
+      <p>Built using Vue.js, Vite and PostCSS. Hosted on GitHub Pages</p>
+    </ProjectCard>
   </div>
 </template>
 
