@@ -53,15 +53,17 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   background-color: var(--danger);
   grid-area: screenshot;
   align-self: start;
+  border-radius: 3px;
 }
 
 .project-preview {
-  box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, 0);
+  box-shadow: 0px 0px 2px 2px var(--hl);
   transition: box-shadow 200ms, transform 200ms;
+  border-radius: 3px;
 }
 
 .project-preview:hover {
-  box-shadow: 3px 3px 6px 0 var(--hl);
+  box-shadow: 0px 0px 4px 2px var(--hl);
   transform: translate(var(--screenshot-offset));
 }
 
