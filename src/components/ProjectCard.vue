@@ -11,8 +11,12 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
     <div class="description">
       <slot> </slot>
       <div class="links">
+        <a v-if="siteUrl" :href="repoUrl" class="inline-link"
+          >Code repository</a
+        >
         <a v-if="siteUrl" :href="siteUrl" class="button-link">Live website</a>
-        <a :href="repoUrl" class="inline-link">Code repository</a>
+
+        <a v-else :href="repoUrl" class="button-link">Code repository</a>
       </div>
     </div>
 
