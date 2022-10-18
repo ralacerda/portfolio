@@ -28,7 +28,7 @@ const iconList = [
     :key="icon"
     :is="icon"
     class="icon"
-    :style="{ animationDelay: index * 0.1 + 2.3 + 's' }"
+    :style="{ animationDelay: index * 0.1 + 1.2 + 's' }"
   ></component>
 </template>
 

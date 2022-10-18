@@ -20,14 +20,14 @@ import Avatar from "@/assets/avatar.png";
 .name {
   font-size: 3.5rem;
   opacity: 0;
-  animation: 0.7s ease-out 1.5s forwards fadeIn;
+  animation: 0.4s ease-out 0.4s forwards fadeIn;
   font-weight: 600;
 }
 .position {
   opacity: 0;
   font-size: 2.5rem;
   color: var(--fg);
-  animation: 0.7s ease-out 2s forwards fadeIn;
+  animation: 0.4s ease-out 0.8s forwards fadeIn;
   position: relative;
   display: block;
   max-width: fit-content;
@@ -43,7 +43,7 @@ import Avatar from "@/assets/avatar.png";
   height: 0.1rem;
   background-color: var(--danger);
   transform: translateX(-100%);
-  animation: 0.9s 2.3s forwards slideIn;
+  animation: 0.9s 1.2s forwards slideIn;
 }
 
 .hero {
@@ -79,7 +79,7 @@ import Avatar from "@/assets/avatar.png";
   background-color: var(--danger);
   border-radius: 100%;
   opacity: 0;
-  animation: 0.7s ease-out 1s forwards fadeIn;
+  animation: 0.4s ease-out forwards fadeIn;
 }
 
 @keyframes fadeIn {
