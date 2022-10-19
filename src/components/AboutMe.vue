@@ -6,6 +6,7 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
   <div class="content">
     <h2>About me</h2>
     <div class="aboutme">
+      <img class="aboutme__picture" :src="aboutMePicture" />
       <div class="aboutme__text">
         <p class="aboutme__paragraph">
           Biologist, graduated from the University of São Paulo, finishing my
@@ -37,7 +38,6 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
           helps me evolve as a developer.
         </p>
       </div>
-      <img class="aboutme__picture" :src="aboutMePicture" />
     </div>
   </div>
 </template>
@@ -48,14 +48,21 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
   line-height: 1.6;
   display: grid;
   grid-template-columns: 4fr 2fr;
+  grid-template-areas: "text photo";
   column-gap: 32px;
+  justify-items: center;
 }
 
 .aboutme__paragraph {
   margin-bottom: 16px;
 }
 
+.aboutme__text {
+  grid-area: text;
+}
+
 .aboutme__picture {
+  grid-area: photo;
   height: 300px;
   border-radius: 100%;
   box-shadow: 0px 0px 3px 4px var(--hl);
