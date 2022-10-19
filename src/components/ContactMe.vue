@@ -22,10 +22,12 @@ import Codepen from "~icons/mdi/codepen";
 
     <p class="contact__text">You can also find me on these social medias:</p>
     <div class="contact__social">
-      <a href="#"><Github /></a>
-      <a href="#"><Twitter /></a>
-      <a href="#"><Linkedin /></a>
-      <a href="#"><Codepen /></a>
+      <a href="https://github.com/ralacerda"><Github /></a>
+      <a href="https://twitter.com/renatoaclacerda"><Twitter /></a>
+      <a href="https://www.linkedin.com/in/renato-lacerda-b581aa253/"
+        ><Linkedin
+      /></a>
+      <a href="https://codepen.io/ralacerda"><Codepen /></a>
     </div>
   </section>
 </template>
