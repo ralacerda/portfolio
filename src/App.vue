@@ -4,6 +4,7 @@ import TheHero from "@/components/TheHero.vue";
 import SkillsTable from "@/components/SkillsTable.vue";
 import ProjectList from "@/components/ProjectList.vue";
 import CertificateList from "./components/CertificateList.vue";
+import AboutMe from "./components/AboutMe.vue";
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import CertificateList from "./components/CertificateList.vue";
   <SkillsTable />
   <ProjectList />
   <CertificateList />
+  <AboutMe />
 </template>
