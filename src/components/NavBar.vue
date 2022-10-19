@@ -25,7 +25,6 @@ import ThemeButton from "@/components/ThemeButton.vue";
   overflow: clip;
   background-color: var(--bg);
   transition: background-color 1s;
-  padding: 6px 0;
   position: sticky;
   z-index: 10;
   top: 0;
@@ -40,6 +39,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 }
 
 .navbar__items {
+  height: 4rem;
   display: grid;
   grid-auto-flow: column;
   column-gap: 8px;
@@ -61,6 +61,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
   justify-self: center;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar__link {
