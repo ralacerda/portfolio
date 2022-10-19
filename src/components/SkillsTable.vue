@@ -48,7 +48,6 @@ const skills = {
   margin: 0 auto;
   font-size: 1.1rem;
   text-align: center;
-  height: 60vh;
   max-width: 50vw;
 }
 

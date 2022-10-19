@@ -30,7 +30,6 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 
 <style scoped>
 .project {
-  margin-top: 4rem;
   margin-bottom: 8rem;
   --screenshot-offset: -12px, -12px;
   display: grid;
