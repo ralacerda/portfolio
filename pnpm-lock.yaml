@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify-json/bx': ^1.1.4
   '@iconify-json/mdi': ^1.1.34
+  '@iconify-json/simple-icons': ^1.1.31
   '@rushstack/eslint-patch': ^1.1.4
   '@vitejs/plugin-vue': ^3.0.3
   '@vue/eslint-config-prettier': ^7.0.0
@@ -26,6 +27,7 @@ dependencies:
 devDependencies:
   '@iconify-json/bx': 1.1.4
   '@iconify-json/mdi': 1.1.34
+  '@iconify-json/simple-icons': 1.1.31
   '@rushstack/eslint-patch': 1.2.0
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
   '@vue/eslint-config-prettier': 7.0.0_znq2sm4m5bonjw4qqm6mwhbe2q
@@ -294,6 +296,12 @@ packages:
 
   /@iconify-json/mdi/1.1.34:
     resolution: {integrity: sha512-Jle/BrVmaKMMPVitsO3lbJ8VpXUVCAhfMFAMo0VoxLDX8ZiKiQyVDHXPug9wGaXYb9mrFZE4UWVK63Cjx8L3rQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/simple-icons/1.1.31:
+    resolution: {integrity: sha512-+bXzPVVZQIGdzCGDt+DtIXHtKZRTxrQPa73EKG8K0Kx+z5w8odI+Rcbj91/P53EqR/Y1VTOnkism/zdaCLbduA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
