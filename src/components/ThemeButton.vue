@@ -21,10 +21,6 @@ const toggleDark = useToggle(isDark);
 </template>
 
 <style scoped>
-div {
-  display: table-cell;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: 0.8s ease;
@@ -41,9 +37,8 @@ div {
 }
 
 .theme-button {
+  width: 100%;
   transform-origin: 50% 70px;
-  vertical-align: middle;
-  margin: 10px;
   font-size: 1.2rem;
 }
 </style>

@@ -81,7 +81,7 @@ import linkedinAgile from "../assets/certificates/agile.png";
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 32px;
+  column-gap: 8px;
   row-gap: 64px;
   justify-items: center;
   margin-bottom: 32px;

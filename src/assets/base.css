@@ -1,4 +1,7 @@
 body {
+  background-color: #e8e8e8;
+  transition: background-color 1s;
+
   --neutral-100: #e8e8e8;
   --neutral-200: #cfd0d1;
   --neutral-300: #b7b8ba;
@@ -25,6 +28,8 @@ body {
 }
 
 .dark {
+  background-color: #222831;
+
   --fg: var(--neutral-100);
   --fg-secondary: var(--neutral-200);
   --fg-details: var(--neutral-300);
@@ -35,8 +40,6 @@ body {
 
 body {
   color: var(--fg);
-  background-color: var(--bg);
-  transition: background-color 1s;
   font-family: var(--sans);
   font-display: swap;
 }

@@ -22,7 +22,7 @@ const skills = {
 
 <template>
   <section class="skills content">
-    <h2 class="skill__title">Skills</h2>
+    <h2>Skills</h2>
     <div class="skill-grid">
       <div
         v-for="(skillList, category) in skills"
@@ -40,42 +40,30 @@ const skills = {
 
 <style scoped>
 .skill-grid {
+  justify-content: start;
+  justify-items: start;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 64px;
-  justify-items: center;
-  align-content: center;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  text-align: center;
+  column-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .column {
-  width: 100%;
-  border: 0.1rem solid var(--bg-details);
   border-radius: 2%;
   overflow: clip;
   height: 100%;
-  box-shadow: 0 0 18px var(--hl);
+  white-space: nowrap;
 }
 
 .skill {
+  padding-left: 4px;
+  padding-top: 1.2rem;
   margin: 0 auto;
-  line-height: 3.5;
-  max-width: 25ch;
-}
-
-.skill__title {
-  margin-top: 0;
-}
-
-.skill:not(:last-child) {
+  line-height: 1.4;
   border-bottom: 0.1rem solid var(--bg-secondary);
 }
 
 .header {
   font-size: 1.2rem;
   font-weight: 600;
-  border-bottom: 0.1rem solid var(--danger);
 }
 </style>

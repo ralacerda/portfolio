@@ -11,12 +11,10 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
     <div class="description">
       <slot> </slot>
       <div class="links">
-        <a v-if="siteUrl" :href="repoUrl" class="inline-link"
-          >Code repository</a
-        >
+        <a v-if="siteUrl" :href="repoUrl" class="inline-link">See the code</a>
         <a v-if="siteUrl" :href="siteUrl" class="button-link">Live website</a>
 
-        <a v-else :href="repoUrl" class="button-link">Code repository</a>
+        <a v-else :href="repoUrl" class="button-link">See the code</a>
       </div>
     </div>
 
@@ -40,7 +38,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   align-items: start;
   grid-template-rows: auto 1fr;
   row-gap: 16px;
-  column-gap: 48px;
+  column-gap: 8px;
 }
 
 .project:last-child {
@@ -80,6 +78,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 
 .description {
   grid-area: description;
+  margin-right: 8px;
 }
 
 .description > :deep(p) {

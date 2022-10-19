@@ -47,10 +47,9 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
   margin: 0 auto;
   line-height: 1.6;
   display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-template-areas: "text photo";
-  column-gap: 32px;
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "text text photo";
+  column-gap: 8px;
 }
 
 .aboutme__paragraph {
@@ -59,11 +58,12 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 
 .aboutme__text {
   grid-area: text;
+  width: 100%;
+  padding-right: 96px;
 }
 
 .aboutme__picture {
   grid-area: photo;
-  height: 300px;
   border-radius: 100%;
   box-shadow: 0px 0px 3px 4px var(--hl);
 }
