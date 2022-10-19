@@ -22,7 +22,7 @@ const skills = {
 
 <template>
   <section class="skills content">
-    <h2>Skills</h2>
+    <h2 class="skill__title">Skills</h2>
     <div class="skill-grid">
       <div
         v-for="(skillList, category) in skills"
@@ -63,6 +63,10 @@ const skills = {
   margin: 0 auto;
   line-height: 3.5;
   max-width: 25ch;
+}
+
+.skill__title {
+  margin-top: 0;
 }
 
 .skill:not(:last-child) {

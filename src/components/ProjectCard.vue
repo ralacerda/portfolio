@@ -30,7 +30,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 
 <style scoped>
 .project {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   --screenshot-offset: -12px, -12px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,6 +41,10 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   grid-template-rows: auto 1fr;
   row-gap: 16px;
   column-gap: 48px;
+}
+
+.project:last-child {
+  margin-bottom: 0;
 }
 
 .title {

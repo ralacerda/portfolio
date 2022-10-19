@@ -52,7 +52,7 @@ import Avatar from "@/assets/avatar.png";
   padding-top: calc(10vh - 2.5rem);
   grid-template-columns: repeat(2, calc(1200px / 2));
   grid-template-rows: 5fr 4fr;
-  height: calc(100vh - 2.5rem - 6rem);
+  height: calc(100vh - 2.5rem);
   align-items: center;
   place-content: center;
   column-gap: 48px;
