@@ -21,7 +21,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
     </div>
 
     <div class="preview-background">
-      <a href="https://ralacerda.github.io/coloquio-kuhn/">
+      <a :href="siteUrl ? siteUrl : repoUrl">
         <img :src="imgUrl" alt="Project Screenshot" class="project-preview" />
       </a>
     </div>
