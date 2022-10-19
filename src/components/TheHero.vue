@@ -55,7 +55,7 @@ import Avatar from "@/assets/avatar.png";
   height: calc(100vh - 2.5rem);
   align-items: center;
   place-content: center;
-  column-gap: 90px;
+  column-gap: 48px;
   row-gap: 40px;
   font-family: var(--display);
   background-color: var(--bg);
