@@ -23,13 +23,13 @@
   margin-top: 4rem;
   position: relative;
   height: 1rem;
-  background: var(--fg-details);
+  background: var(--bg-details);
   line-height: 0;
 }
 
 .divider {
   inset: -40px 0 0 0;
   position: absolute;
-  fill: var(--fg-details);
+  fill: var(--bg-details);
 }
 </style>

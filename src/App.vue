@@ -5,6 +5,7 @@ import SkillsTable from "@/components/SkillsTable.vue";
 import ProjectList from "@/components/ProjectList.vue";
 import CertificateList from "./components/CertificateList.vue";
 import AboutMe from "./components/AboutMe.vue";
+import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import AboutMe from "./components/AboutMe.vue";
   <ProjectList />
   <CertificateList />
   <AboutMe />
+  <TheFooter />
 </template>
