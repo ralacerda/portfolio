@@ -7,19 +7,8 @@ import Css from "~icons/mdi/language-css3";
 import Sass from "~icons/mdi/sass";
 import Javascript from "~icons/mdi/language-javascript";
 import Vue from "~icons/mdi/vuejs";
-import Baguette from "~icons/mdi/baguette";
 
-const iconList = [
-  IconBash,
-  Git,
-  Github,
-  Html,
-  Css,
-  Sass,
-  Javascript,
-  Vue,
-  Baguette,
-];
+const iconList = [IconBash, Git, Github, Html, Css, Sass, Javascript, Vue];
 </script>
 
 <template>
