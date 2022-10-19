@@ -9,9 +9,9 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
       <img class="aboutme__picture" :src="aboutMePicture" />
       <div class="aboutme__text">
         <p class="aboutme__paragraph">
-          Biologist, graduated from the University of São Paulo, finishing my
-          Master's degree in Ecology from the University of Campinas, I'm
-          changing careers into web development.
+          I'm a brazilian Biologist, graduated from the University of São Paulo,
+          finishing my Master's degree in Ecology from the University of
+          Campinas, currently changing careers into web development.
         </p>
         <p class="aboutme__paragraph">
           I've always enjoyed programming. During my undergraduate studies, I
@@ -22,20 +22,20 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
           how to navigate and solve problems in GNU/Linux.
         </p>
         <p class="aboutme__paragraph">
-          Currently, I'm focused on learning Front-end technologies, with a
-          solid knowledge of Javascript, HTML5, CSS3, basic notions of React,
-          Tailwind and Bootstrap, and advancing my skills in Vue.js and Vite. I
-          have experience in creating sites for events, automation scripts in
-          Bash and Python, usage in Git and Github, and I've contributed with
-          code and documentation for Open Source projects.
+          At this moment, I'm focused on learning Front-end technologies. I have
+          practical skills of Javascript, HTML5, CSS3, a basic notion of React,
+          Tailwind and Bootstrap, and solid knowledge of Vue and Vite. I also
+          have experience in creating sites for events, usage of the command
+          line, Git, Github, and Python. I've contributed with code and
+          documentation for Open Source projects.
         </p>
         <p class="aboutme__paragraph">
           I am a free software enthusiast, board games, computer games and
           Formula 1 fan. I also enjoy cooking and baking bread on weekends.
         </p>
         <p class="aboutme__paragraph">
-          I love learning new things, so I'm looking for an opportunity that
-          helps me evolve as a developer.
+          I'm looking for an opportunity to help me evolve as a developer. I'm
+          excited to learn new skills and to strengthen that ones that I have.
         </p>
       </div>
     </div>
