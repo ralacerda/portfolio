@@ -21,7 +21,7 @@ const skills = {
 </script>
 
 <template>
-  <div class="skills content">
+  <section class="skills content">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div
@@ -35,24 +35,23 @@ const skills = {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
 .skill-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 64px;
   justify-items: center;
   align-content: center;
   margin: 0 auto;
   font-size: 1.1rem;
   text-align: center;
-  max-width: 50vw;
 }
 
 .column {
-  width: 30ch;
+  width: 100%;
   border: 0.1rem solid var(--bg-details);
   border-radius: 2%;
   overflow: clip;

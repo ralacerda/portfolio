@@ -33,19 +33,18 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   margin-bottom: 8rem;
   --screenshot-offset: -12px, -12px;
   display: grid;
-  grid-template-columns: 5fr 4fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "title screenshot"
     "description screenshot ";
   align-items: start;
   grid-template-rows: auto 1fr;
-  row-gap: 28px;
-  column-gap: 120px;
+  row-gap: 16px;
+  column-gap: 48px;
 }
 
 .title {
   grid-area: title;
-  text-align: center;
 }
 
 .preview-background {

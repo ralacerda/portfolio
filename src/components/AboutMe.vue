@@ -3,7 +3,7 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 </script>
 
 <template>
-  <div class="content">
+  <section class="content">
     <h2>About me</h2>
     <div class="aboutme">
       <img class="aboutme__picture" :src="aboutMePicture" />
@@ -39,7 +39,7 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

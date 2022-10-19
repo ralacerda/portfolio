@@ -4,7 +4,7 @@ import Avatar from "@/assets/avatar.png";
 </script>
 
 <template>
-  <div class="hero">
+  <section class="hero">
     <img class="avatar" :src="Avatar" />
     <div>
       <h1 class="name">Hi, I'm Renato</h1>
@@ -13,7 +13,7 @@ import Avatar from "@/assets/avatar.png";
     <div class="skills">
       <HeroIcons />
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

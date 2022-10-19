@@ -9,70 +9,72 @@ import linkedinAgile from "../assets/certificates/agile.png";
 </script>
 
 <template>
-  <h2>Certificates</h2>
-  <div class="content grid">
-    <CertificateCard
-      title="Javascript"
-      :img="sololearnJS"
-      url="https://www.sololearn.com/certificates/CT-KM0ZBUKV"
-      class="sololearn"
-    >
-      Certificate provided by Sololearn for the course "Javascript", which
-      included lessons and challenges
-    </CertificateCard>
+  <section class="content">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <CertificateCard
+        title="Javascript"
+        :img="sololearnJS"
+        url="https://www.sololearn.com/certificates/CT-KM0ZBUKV"
+        class="sololearn"
+      >
+        Certificate provided by Sololearn for the course "Javascript", which
+        included lessons and challenges
+      </CertificateCard>
 
-    <CertificateCard
-      title="React + Redux"
-      :img="sololearnRR"
-      url="https://www.sololearn.com/certificates/CT-HKASY6WE"
-      class="sololearn"
-    >
-      Certificate provided by Sololearn for the course "React + Redux", which
-      included lessons and quizzes
-    </CertificateCard>
+      <CertificateCard
+        title="React + Redux"
+        :img="sololearnRR"
+        url="https://www.sololearn.com/certificates/CT-HKASY6WE"
+        class="sololearn"
+      >
+        Certificate provided by Sololearn for the course "React + Redux", which
+        included lessons and quizzes
+      </CertificateCard>
 
-    <CertificateCard
-      title="Python Core"
-      :img="sololearnPC"
-      url="https://www.sololearn.com/certificates/CT-Y83WZJCZ"
-      class="sololearn"
-    >
-      Certificate provided by Sololearn for the course "Python Core", which
-      included lessons and challenges
-    </CertificateCard>
+      <CertificateCard
+        title="Python Core"
+        :img="sololearnPC"
+        url="https://www.sololearn.com/certificates/CT-Y83WZJCZ"
+        class="sololearn"
+      >
+        Certificate provided by Sololearn for the course "Python Core", which
+        included lessons and challenges
+      </CertificateCard>
 
-    <CertificateCard
-      title="JavaScript Algorithms"
-      :img="javascriptFCC"
-      url="https://www.freecodecamp.org/certification/renatolacerda92/javascript-algorithms-and-data-structures"
-      class="freecodecamp right"
-    >
-      Certificate provided by freeCodeCamp for the course "JavaScript Algorithms
-      and Data Structures", which included lessons and 5 challenges. Solutions
-      are available in the certificate link.
-    </CertificateCard>
+      <CertificateCard
+        title="JavaScript Algorithms"
+        :img="javascriptFCC"
+        url="https://www.freecodecamp.org/certification/renatolacerda92/javascript-algorithms-and-data-structures"
+        class="freecodecamp right"
+      >
+        Certificate provided by freeCodeCamp for the course "JavaScript
+        Algorithms and Data Structures", which included lessons and 5
+        challenges. Solutions are available in the certificate link.
+      </CertificateCard>
 
-    <CertificateCard
-      title="Responsive Web Design"
-      :img="javascriptWeb"
-      url="https://www.freecodecamp.org/certification/renatolacerda92/responsive-web-design"
-      class="freecodecamp left"
-    >
-      Certificate provided by freeCodeCamp for the course "Responsive Web
-      Design", which included lessons and 5 challenges. Solutions are available
-      in the certificate link.
-    </CertificateCard>
-    <CertificateCard
-      title="Agile Software Development"
-      :img="linkedinAgile"
-      url="https://lnkd.in/dv8phaxB"
-      class="freecodecamp left"
-    >
-      Certificate provided by Linkedin for the course "Agile Software
-      Development", which included 1 hour and 53 minutes of video lessons and
-      quizzes
-    </CertificateCard>
-  </div>
+      <CertificateCard
+        title="Responsive Web Design"
+        :img="javascriptWeb"
+        url="https://www.freecodecamp.org/certification/renatolacerda92/responsive-web-design"
+        class="freecodecamp left"
+      >
+        Certificate provided by freeCodeCamp for the course "Responsive Web
+        Design", which included lessons and 5 challenges. Solutions are
+        available in the certificate link.
+      </CertificateCard>
+      <CertificateCard
+        title="Agile Software Development"
+        :img="linkedinAgile"
+        url="https://lnkd.in/dv8phaxB"
+        class="freecodecamp left"
+      >
+        Certificate provided by Linkedin for the course "Agile Software
+        Development", which included 1 hour and 53 minutes of video lessons and
+        quizzes
+      </CertificateCard>
+    </div>
+  </section>
 </template>
 
 <style>
