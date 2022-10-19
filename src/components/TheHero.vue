@@ -9,7 +9,9 @@ import Avatar from "@/assets/avatar.png";
       <img class="avatar" :src="Avatar" />
       <div>
         <h1 class="name">Hi, I'm Renato</h1>
-        <div class="position">Front-end developer</div>
+        <div class="position">
+          Looking for a learning opportunity as Front-end developer
+        </div>
       </div>
     </div>
     <HeroIcons />
@@ -32,6 +34,7 @@ import Avatar from "@/assets/avatar.png";
   display: block;
   max-width: fit-content;
   overflow: hidden;
+  line-height: 1.2;
 }
 
 .hero {
