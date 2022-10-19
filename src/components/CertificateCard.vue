@@ -20,8 +20,8 @@ defineProps(["title", "img", "url"]);
 .certificate-title {
   font-size: 1rem;
   text-align: center;
+  white-space: nowrap;
 }
-
 .certificate-image {
   transition: inherit;
   border-radius: 6px;
