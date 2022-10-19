@@ -5,13 +5,14 @@ defineProps(["title", "img", "url"]);
 <template>
   <div>
     <h3 class="certificate-title">{{ title }}</h3>
-    <div class="certificate-card">
-      <img class="certificate-image" :src="img" />
-      <div class="certificate-text">
-        <slot></slot>
-        <a class="certificate-link" :href="url">Verify certificate</a>
+    <a :href="url">
+      <div class="certificate-card">
+        <img class="certificate-image" :src="img" />
+        <div class="certificate-text">
+          <slot></slot>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -19,12 +20,6 @@ defineProps(["title", "img", "url"]);
 .certificate-title {
   font-size: 1rem;
   text-align: center;
-}
-
-.certificate-link {
-  margin-top: 2rem;
-  text-decoration: var(--danger) solid underline;
-  color: inherit;
 }
 
 .certificate-image {
@@ -45,7 +40,7 @@ defineProps(["title", "img", "url"]);
   place-content: center;
   height: 100%;
   width: 100%;
-  padding: 16px;
+  padding: 24px;
   text-align: center;
 }
 
@@ -53,13 +48,11 @@ defineProps(["title", "img", "url"]);
   position: relative;
   transition: 0.3s;
 }
-.certificate-card:hover .certificate-text,
-.certificate-card:focus-within .certificate-text {
+.certificate-card:hover .certificate-text {
   opacity: 1;
 }
 
-.certificate-card:hover .certificate-image,
-.certificate-card:focus-within .certificate-image {
+.certificate-card:hover .certificate-image {
   filter: brightness(20%);
 }
 </style>

@@ -1,9 +1,11 @@
 <script setup>
 import CertificateCard from "./CertificateCard.vue";
 import javascriptFCC from "../assets/certificates/freecodecamp_javascript.png";
+import javascriptWeb from "../assets/certificates/freecodecamp_webdesign.png";
 import sololearnJS from "../assets/certificates/sololearn_javascript.png";
 import sololearnRR from "../assets/certificates/sololearn_react.png";
 import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
+import linkedinAgile from "../assets/certificates/agile.png";
 </script>
 
 <template>
@@ -15,8 +17,8 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
       url="https://www.sololearn.com/certificates/CT-KM0ZBUKV"
       class="sololearn"
     >
-      Given by X. To aquire this certificated, I solved 5 projects solutions can
-      be found on the link.
+      Certificate provided by Sololearn for the course "Javascript", which
+      included lessons and challenges
     </CertificateCard>
 
     <CertificateCard
@@ -25,8 +27,8 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
       url="https://www.sololearn.com/certificates/CT-HKASY6WE"
       class="sololearn"
     >
-      Given by X. To aquire this certificated, I solved 5 projects solutions can
-      be found on the link.
+      Certificate provided by Sololearn for the course "React + Redux", which
+      included lessons and quizzes
     </CertificateCard>
 
     <CertificateCard
@@ -35,8 +37,8 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
       url="https://www.sololearn.com/certificates/CT-Y83WZJCZ"
       class="sololearn"
     >
-      Given by X. To aquire this certificated, I solved 5 projects solutions can
-      be found on the link.
+      Certificate provided by Sololearn for the course "Python Core", which
+      included lessons and challenges
     </CertificateCard>
 
     <CertificateCard
@@ -45,18 +47,30 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
       url="https://www.freecodecamp.org/certification/renatolacerda92/javascript-algorithms-and-data-structures"
       class="freecodecamp right"
     >
-      Given by X. To aquire this certificated, I solved 5 projects solutions can
-      be found on the link.
+      Certificate provided by freeCodeCamp for the course "JavaScript Algorithms
+      and Data Structures", which included lessons and 5 challenges. Solutions
+      are available in the certificate link.
     </CertificateCard>
 
     <CertificateCard
       title="Responsive Web Design"
-      :img="javascriptFCC"
+      :img="javascriptWeb"
       url="https://www.freecodecamp.org/certification/renatolacerda92/responsive-web-design"
       class="freecodecamp left"
     >
-      Given by X. To aquire this certificated, I solved 5 projects solutions can
-      be found on the link.
+      Certificate provided by freeCodeCamp for the course "Responsive Web
+      Design", which included lessons and 5 challenges. Solutions are available
+      in the certificate link.
+    </CertificateCard>
+    <CertificateCard
+      title="Agile Software Development"
+      :img="linkedinAgile"
+      url="https://lnkd.in/dv8phaxB"
+      class="freecodecamp left"
+    >
+      Certificate provided by Linkedin for the course "Agile Software
+      Development", which included 1 hour and 53 minutes of video lessons and
+      quizzes
     </CertificateCard>
   </div>
 </template>
@@ -64,22 +78,10 @@ import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
 <style>
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
   row-gap: 64px;
   justify-items: center;
   margin-bottom: 32px;
-}
-
-.sololearn {
-  grid-column: span 2;
-}
-
-.right {
-  grid-column: 2 / span 2;
-}
-
-.left {
-  grid-column: span 2;
 }
 </style>
