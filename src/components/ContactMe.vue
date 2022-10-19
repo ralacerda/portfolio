@@ -8,13 +8,19 @@ import Codepen from "~icons/mdi/codepen";
 <template>
   <section class="content">
     <h2>Contact</h2>
-    <p class="contact_text">
+    <p class="contact__text">
       Do think I'm a good fit for your company? Do you have an learning
-      opportunity for me? Any feedbacks or questions? Please, let me know! You
-      can contact me using the form bellow:
+      opportunity for me? Any feedbacks or questions? Please, let me know!
     </p>
-    <div class="contact_email">renato.ac.lacerda@gmail</div>
-    <p class="contact_text">You can also find me on these websites:</p>
+
+    <p class="contact__text">
+      You can e-mail me at
+      <a href="mailto:renato.ac.lacerda@gmail.com">
+        renato.ac.lacerda@gmail.com
+      </a>
+    </p>
+
+    <p class="contact__text">You can also find me on these social medias:</p>
     <div class="contact__social">
       <a href="#"><Github /></a>
       <a href="#"><Twitter /></a>
@@ -25,6 +31,11 @@ import Codepen from "~icons/mdi/codepen";
 </template>
 
 <style>
+.contact__text {
+  width: 736px;
+  margin-bottom: 1rem;
+}
+
 .contact__social {
   font-size: 2rem;
   display: flex;
@@ -33,5 +44,9 @@ import Codepen from "~icons/mdi/codepen";
 
 .contact__social *:hover {
   color: var(--danger);
+}
+
+.contact_antispam {
+  display: none;
 }
 </style>
