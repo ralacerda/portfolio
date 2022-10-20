@@ -1,5 +1,5 @@
 <script setup>
-import aboutMePicture from "../assets/pictures/about_me.jpeg";
+import aboutMePicture from "../assets/pictures/about_me.webp";
 </script>
 
 <template>
@@ -55,13 +55,6 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 
 @media (--tablet) {
   .aboutme {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "photo" "text";
-  }
-}
-
-@media (--desktop) {
-  .aboutme {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "text text photo";
   }
@@ -76,6 +69,7 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 }
 
 .aboutme__picture {
+  width: 240px;
   grid-area: photo;
   border-radius: 100%;
   box-shadow: 0px 0px 3px 4px var(--hl);

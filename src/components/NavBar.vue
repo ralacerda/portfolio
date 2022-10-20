@@ -22,6 +22,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 
 <style scoped>
 .navbar {
+  visibility: collapse;
   overflow: clip;
   background-color: var(--bg);
   transition: background-color 1s;
@@ -30,6 +31,12 @@ import ThemeButton from "@/components/ThemeButton.vue";
   top: 0;
   border-bottom: solid 1px var(--bg-details);
   box-shadow: 0px 0px 2px 0px var(--hl);
+}
+
+@media (--desktop) {
+  .navbar {
+    visibility: visible;
+  }
 }
 
 .navbar__title {

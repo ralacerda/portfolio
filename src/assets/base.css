@@ -44,7 +44,7 @@ body {
   font-display: swap;
 }
 
-html {
+html:focus-within {
   scroll-padding-top: 6rem;
 }
 

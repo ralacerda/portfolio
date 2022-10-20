@@ -48,17 +48,9 @@ const skills = {
   row-gap: 1rem;
 }
 
-@media (--desktop) {
+@media (--tablet) {
   .skill-grid {
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (--tablet) {
-  .name {
-    font-size: 2.5rem;
-  }
-  .position {
-    font-size: 1.5rem;
   }
 }
 

@@ -43,7 +43,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   column-gap: 8px;
 }
 
-@media (--desktop) {
+@media (--tablet) {
   .project {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

@@ -27,15 +27,23 @@ const iconList = [IconBash, Git, Github, Html, Css, Tailwind, Javascript, Vue];
 .skill-icons {
   margin: 0 auto;
   display: grid;
-  grid-auto-flow: column;
   justify-items: center;
+  row-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (--desktop) {
+  .skill-icons {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 .icon {
   animation-name: fadeIn, slideIn;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  font-size: 4.5rem;
+  font-size: min(13vw, 4.5rem);
+  /* font-size: 4.5rem; */
   opacity: 0;
   color: var(--fg-secondary);
 }

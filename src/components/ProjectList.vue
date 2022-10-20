@@ -1,8 +1,8 @@
 <script setup>
 import ProjectCard from "./ProjectCard.vue";
-import kuhn from "@/assets/projects/kuhn.png";
-import f1next from "@/assets/projects/f1next.png";
-import portfolio from "@/assets/projects/portfolio.png";
+import kuhn from "@/assets/projects/kuhn.webp";
+import f1next from "@/assets/projects/f1next.webp";
+import portfolio from "@/assets/projects/portfolio.webp";
 </script>
 
 <template>
@@ -22,8 +22,7 @@ import portfolio from "@/assets/projects/portfolio.png";
           and schedule.",
         </p>
         <p>
-          Built with <em>Eleventy</em>, <em>AlpineJS</em> and <em>Tailwind</em>,
-          hosted on <em>Github Pages</em>
+          Built with Eleventy, AlpineJS and Tailwind, hosted on Github Pages
         </p>
       </ProjectCard>
 
@@ -34,8 +33,8 @@ import portfolio from "@/assets/projects/portfolio.png";
         class="project"
       >
         <p>
-          A small script written in <em>Python</em> to display information about
-          the next Formula 1 Grand Prix from the terminal.
+          A small script written in Python to display information about the next
+          Formula 1 Grand Prix from the terminal.
         </p>
         <p>
           It includes flags for showing the full weekend schedule or a countdown

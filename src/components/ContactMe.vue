@@ -40,12 +40,6 @@ import Codepen from "~icons/mdi/codepen";
 
 @media (--tablet) {
   .contact__text {
-    width: 50%;
-  }
-}
-
-@media (--desktop) {
-  .contact__text {
     width: 66%;
   }
 }

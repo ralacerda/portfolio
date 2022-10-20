@@ -1,11 +1,11 @@
 <script setup>
 import CertificateCard from "./CertificateCard.vue";
-import javascriptFCC from "../assets/certificates/freecodecamp_javascript.png";
-import javascriptWeb from "../assets/certificates/freecodecamp_webdesign.png";
-import sololearnJS from "../assets/certificates/sololearn_javascript.png";
-import sololearnRR from "../assets/certificates/sololearn_react.png";
-import sololearnPC from "../assets/certificates/sololearn_pythoncore.png";
-import linkedinAgile from "../assets/certificates/agile.png";
+import javascriptFCC from "../assets/certificates/freecodecamp_javascript.webp";
+import javascriptWeb from "../assets/certificates/freecodecamp_webdesign.webp";
+import sololearnJS from "../assets/certificates/sololearn_javascript.webp";
+import sololearnRR from "../assets/certificates/sololearn_react.webp";
+import sololearnPC from "../assets/certificates/sololearn_pythoncore.webp";
+import linkedinAgile from "../assets/certificates/agile.webp";
 </script>
 
 <template>

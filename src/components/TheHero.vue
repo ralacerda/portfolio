@@ -1,6 +1,6 @@
 <script setup>
 import HeroIcons from "@/components/HeroIcons.vue";
-import Avatar from "@/assets/avatar.png";
+import Avatar from "@/assets/avatar.webp";
 </script>
 
 <template>
@@ -12,6 +12,9 @@ import Avatar from "@/assets/avatar.png";
         <div class="position">
           Looking for a learning opportunity as Front-end developer
         </div>
+        <div class="cta">
+          <a href="#projects" class="button-link"> See my projects </a>
+        </div>
       </div>
     </div>
     <HeroIcons />
@@ -19,8 +22,15 @@ import Avatar from "@/assets/avatar.png";
 </template>
 
 <style scoped>
+.cta {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  animation: 0.4s ease-out 1.2s forwards fadeIn;
+  opacity: 0;
+}
+
 .name {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   opacity: 0;
   animation: 0.4s ease-out 0.4s forwards fadeIn;
   font-weight: 600;
@@ -28,7 +38,7 @@ import Avatar from "@/assets/avatar.png";
 }
 .position {
   opacity: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--fg);
   animation: 0.4s ease-out 0.8s forwards fadeIn;
   position: relative;
@@ -38,20 +48,22 @@ import Avatar from "@/assets/avatar.png";
 }
 
 .hero {
+  text-align: center;
+  margin-bottom: 4rem;
   line-height: 1.1;
-  margin: 6rem 0;
   display: grid;
   align-items: center;
   place-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 48px;
+  row-gap: 16px;
   font-family: var(--display);
   background-color: var(--bg);
   transition: background-color 1s;
 }
 
 .avatar {
-  justify-self: right;
+  justify-self: center;
   box-shadow: 4px -8px 0 8px var(--danger);
   background-color: var(--danger);
   border-radius: 100%;
@@ -60,11 +72,24 @@ import Avatar from "@/assets/avatar.png";
 }
 
 @media (--tablet) {
+  .hero {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+  }
+  .avatar {
+    justify-self: right;
+  }
+}
+
+@media (--desktop) {
+  .hero {
+    margin: 6rem 0;
+  }
   .name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .position {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
