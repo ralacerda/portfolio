@@ -10,48 +10,53 @@ import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
-  <div class="grid-2">
+  <div class="grid-2 content">
     <div>a</div>
     <div>a</div>
   </div>
-  <div class="grid-3">
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-  </div>
-  <div class="grid-12">
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
+  <div class="grid-3 content">
     <div>a</div>
     <div>a</div>
     <div>a</div>
   </div>
-
-  <NavBar />
-  <TheHero />
-  <SkillsTable />
-  <ProjectList />
-  <CertificateList />
-  <AboutMe />
-  <ContactMe />
-  <TheFooter />
+  <div class="grid-12 content">
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+    <div>a</div>
+  </div>
+  <div class="app">
+    <NavBar />
+    <TheHero />
+    <SkillsTable />
+    <ProjectList />
+    <CertificateList />
+    <AboutMe />
+    <ContactMe />
+    <TheFooter />
+  </div>
 </template>
 
-<style>
+<style scoped>
+.app {
+  background-color: var(--bg);
+  transition: background-color 1s;
+}
+
 .grid-2 {
   position: absolute;
   inset: 0;
   margin: auto auto;
   justify-content: center;
   display: grid;
-  max-width: 1240px;
   column-gap: 48px;
   grid-template-columns: repeat(2, 1fr);
   opacity: 0;
@@ -75,9 +80,11 @@ import TheFooter from "./components/TheFooter.vue";
   margin: auto auto;
   justify-content: center;
   display: grid;
-  max-width: 1240px;
   column-gap: 8px;
   grid-template-columns: repeat(12, 1fr);
   opacity: 0;
 }
+
+@custom-media --tablet (min-width: 640px);
+@custom-media --desktop (min-width: 960px);
 </style>
