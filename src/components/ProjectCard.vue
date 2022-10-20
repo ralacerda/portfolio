@@ -11,15 +11,20 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
     <div class="description">
       <slot> </slot>
       <div class="links">
-        <a v-if="siteUrl" :href="siteUrl" class="button-link">Live website</a>
-        <a :href="repoUrl" :class="siteUrl ? 'inline-link' : 'button-link'"
+        <a v-if="siteUrl" :href="siteUrl" class="button-link" target="_blank"
+          >Live website</a
+        >
+        <a
+          :href="repoUrl"
+          :class="siteUrl ? 'inline-link' : 'button-link'"
+          target="_blank"
           >See the source code</a
         >
       </div>
     </div>
 
     <div class="preview-background">
-      <a :href="siteUrl ? siteUrl : repoUrl">
+      <a :href="siteUrl ? siteUrl : repoUrl" target="_blank">
         <img :src="imgUrl" alt="Project Screenshot" class="project-preview" />
       </a>
     </div>

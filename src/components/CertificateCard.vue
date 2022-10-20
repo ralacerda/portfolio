@@ -5,7 +5,7 @@ defineProps(["title", "img", "url"]);
 <template>
   <div>
     <h3 class="certificate-title">{{ title }}</h3>
-    <a :href="url">
+    <a :href="url" target="_blank">
       <div class="certificate-card">
         <img class="certificate-image" :src="img" />
         <div class="certificate-text">
