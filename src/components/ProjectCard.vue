@@ -11,10 +11,10 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
     <div class="description">
       <slot> </slot>
       <div class="links">
-        <a v-if="siteUrl" :href="repoUrl" class="inline-link">See the code</a>
         <a v-if="siteUrl" :href="siteUrl" class="button-link">Live website</a>
-
-        <a v-else :href="repoUrl" class="button-link">See the code</a>
+        <a :href="repoUrl" :class="siteUrl ? 'inline-link' : 'button-link'"
+          >See the source code</a
+        >
       </div>
     </div>
 
@@ -80,14 +80,19 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 }
 
 .links {
-  text-align: center;
   margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  align-items: center;
 }
 
-.links > * {
-  margin-right: 1rem;
+@media (--tablet) {
+  .links {
+    flex-flow: row;
+  }
 }
-
 .description {
   grid-area: description;
   margin-right: 8px;
