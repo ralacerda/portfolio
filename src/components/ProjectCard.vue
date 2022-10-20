@@ -31,14 +31,25 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   margin-bottom: 4rem;
   --screenshot-offset: -12px, -12px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "title screenshot"
-    "description screenshot ";
+    "title"
+    "screenshot"
+    "description";
+
   align-items: start;
   grid-template-rows: auto 1fr;
   row-gap: 16px;
   column-gap: 8px;
+}
+
+@media (--desktop) {
+  .project {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title screenshot"
+      "description screenshot ";
+  }
 }
 
 .project:last-child {
@@ -74,7 +85,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 }
 
 .links > * {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .description {

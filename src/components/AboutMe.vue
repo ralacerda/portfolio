@@ -47,9 +47,24 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
   margin: 0 auto;
   line-height: 1.6;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "text text photo";
+  grid-template-columns: 1fr;
+  grid-template-areas: "photo" "text";
+  row-gap: 2rem;
   column-gap: 8px;
+}
+
+@media (--tablet) {
+  .aboutme {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "photo" "text";
+  }
+}
+
+@media (--desktop) {
+  .aboutme {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "text text photo";
+  }
 }
 
 .aboutme__paragraph {
@@ -58,8 +73,6 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 
 .aboutme__text {
   grid-area: text;
-  width: 100%;
-  padding-right: 96px;
 }
 
 .aboutme__picture {

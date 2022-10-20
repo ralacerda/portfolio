@@ -44,7 +44,22 @@ const skills = {
   justify-items: start;
   display: grid;
   column-gap: 8px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+
+@media (--desktop) {
+  .skill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (--tablet) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .position {
+    font-size: 1.5rem;
+  }
 }
 
 .column {

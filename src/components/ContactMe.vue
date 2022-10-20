@@ -9,8 +9,9 @@ import Codepen from "~icons/mdi/codepen";
   <section class="content" id="contactme">
     <h2>Contact</h2>
     <p class="contact__text">
-      Do think I'm a good fit for your company? Do you have an learning
-      opportunity for me? Any feedbacks or questions? Please, let me know!
+      Do think I'm a good fit for your company? <br />
+      Do you have an learning opportunity for me? <br />
+      Any feedbacks or questions? Please, let me know!
     </p>
 
     <p class="contact__text">
@@ -32,10 +33,21 @@ import Codepen from "~icons/mdi/codepen";
   </section>
 </template>
 
-<style>
+<style scoped>
 .contact__text {
-  width: 736px;
   margin-bottom: 1rem;
+}
+
+@media (--tablet) {
+  .contact__text {
+    width: 50%;
+  }
+}
+
+@media (--desktop) {
+  .contact__text {
+    width: 66%;
+  }
 }
 
 .contact__social {

@@ -19,7 +19,6 @@ defineProps(["title", "img", "url"]);
 <style scoped>
 .certificate-title {
   font-size: 1rem;
-  text-align: center;
   white-space: nowrap;
 }
 .certificate-image {

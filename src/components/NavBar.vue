@@ -20,7 +20,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
   </nav>
 </template>
 
-<style>
+<style scoped>
 .navbar {
   overflow: clip;
   background-color: var(--bg);

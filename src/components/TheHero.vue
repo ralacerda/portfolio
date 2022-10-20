@@ -24,6 +24,7 @@ import Avatar from "@/assets/avatar.png";
   opacity: 0;
   animation: 0.4s ease-out 0.4s forwards fadeIn;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 .position {
   opacity: 0;
@@ -34,10 +35,10 @@ import Avatar from "@/assets/avatar.png";
   display: block;
   max-width: fit-content;
   overflow: hidden;
-  line-height: 1.2;
 }
 
 .hero {
+  line-height: 1.1;
   margin: 6rem 0;
   display: grid;
   align-items: center;
@@ -56,6 +57,15 @@ import Avatar from "@/assets/avatar.png";
   border-radius: 100%;
   opacity: 0;
   animation: 0.4s ease-out forwards fadeIn;
+}
+
+@media (--tablet) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .position {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes fadeIn {

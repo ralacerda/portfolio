@@ -77,13 +77,25 @@ import linkedinAgile from "../assets/certificates/agile.png";
   </section>
 </template>
 
-<style>
+<style scoped>
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   column-gap: 8px;
   row-gap: 64px;
-  justify-items: center;
+  justify-items: start;
   margin-bottom: 32px;
+}
+
+@media (--tablet) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (--desktop) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>

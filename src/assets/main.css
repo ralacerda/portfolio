@@ -19,7 +19,8 @@ h3 {
 }
 
 .content {
-  width: min(95vw, 1240px);
+  max-width: 1288px;
+  padding: 0 32px;
   margin: 0 auto;
 }
 

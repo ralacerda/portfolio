@@ -40,6 +40,5 @@ const toggleDark = useToggle(isDark);
   width: 100%;
   transform-origin: 50% 70px;
   font-size: 1.2rem;
-  cursor: pointer;
 }
 </style>

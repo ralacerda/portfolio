@@ -18,7 +18,7 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
 .footer {
   margin-top: 4rem;
   position: relative;
