@@ -62,7 +62,8 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
   border-radius: 3px;
 }
 
-.project-preview:hover {
+.project-preview:hover,
+.project-preview:focus-visible {
   box-shadow: 0px 0px 4px 2px var(--hl);
   transform: translate(var(--screenshot-offset));
 }

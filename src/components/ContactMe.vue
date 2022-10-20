@@ -44,7 +44,8 @@ import Codepen from "~icons/mdi/codepen";
   gap: 1rem;
 }
 
-.contact__social *:hover {
+.contact__social *:hover,
+.contact__social *:focus-visible {
   color: var(--danger);
 }
 

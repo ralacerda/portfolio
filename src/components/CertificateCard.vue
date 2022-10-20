@@ -48,11 +48,13 @@ defineProps(["title", "img", "url"]);
   position: relative;
   transition: 0.3s;
 }
-.certificate-card:hover .certificate-text {
+.certificate-card:hover .certificate-text,
+.certificate-card:focus-visible .certificate-text {
   opacity: 1;
 }
 
-.certificate-card:hover .certificate-image {
+.certificate-card:hover .certificate-image,
+.certificate-card:focus-visible .certificate-image {
   filter: brightness(20%);
 }
 </style>

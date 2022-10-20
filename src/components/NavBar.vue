@@ -73,7 +73,8 @@ import ThemeButton from "@/components/ThemeButton.vue";
   font-family: var(--serif);
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus-visible {
   --p: 100%;
 }
 </style>
