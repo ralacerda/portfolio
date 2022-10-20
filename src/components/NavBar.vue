@@ -6,14 +6,14 @@ import ThemeButton from "@/components/ThemeButton.vue";
   <nav class="navbar">
     <div class="navbar__items content">
       <header class="navbar__title">
-        <a href="#" class="navbar__link">Renato Lacerda</a>
+        <a href="#intro" class="navbar__link">Renato Lacerda</a>
       </header>
       <div class="navbar__navigation">
-        <a href="#" class="navbar__link">Skills</a>
-        <a href="#" class="navbar__link">Projects</a>
-        <a href="#" class="navbar__link">Certificates</a>
-        <a href="#" class="navbar__link">About me</a>
-        <a href="#" class="navbar__link">Contact</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#certificates" class="navbar__link">Certificates</a>
+        <a href="#aboutme" class="navbar__link">About me</a>
+        <a href="#contactme" class="navbar__link">Contact</a>
       </div>
       <ThemeButton class="navbar__button" />
     </div>

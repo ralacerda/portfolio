@@ -6,7 +6,7 @@ import portfolio from "@/assets/projects/portfolio.png";
 </script>
 
 <template>
-  <section class="content">
+  <section class="content" id="projects">
     <h2>Projects</h2>
     <div class="projects">
       <ProjectCard

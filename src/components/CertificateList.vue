@@ -9,7 +9,7 @@ import linkedinAgile from "../assets/certificates/agile.png";
 </script>
 
 <template>
-  <section class="content">
+  <section class="content" id="certificates">
     <h2>Certificates</h2>
     <div class="grid">
       <CertificateCard

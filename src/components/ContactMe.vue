@@ -6,7 +6,7 @@ import Codepen from "~icons/mdi/codepen";
 </script>
 
 <template>
-  <section class="content">
+  <section class="content" id="contactme">
     <h2>Contact</h2>
     <p class="contact__text">
       Do think I'm a good fit for your company? Do you have an learning

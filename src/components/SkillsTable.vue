@@ -21,7 +21,7 @@ const skills = {
 </script>
 
 <template>
-  <section class="skills content">
+  <section class="skills content" id="skills">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div

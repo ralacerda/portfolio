@@ -4,7 +4,7 @@ import Avatar from "@/assets/avatar.png";
 </script>
 
 <template>
-  <section class="content">
+  <section class="content" id="intro">
     <div class="hero">
       <img class="avatar" :src="Avatar" />
       <div>

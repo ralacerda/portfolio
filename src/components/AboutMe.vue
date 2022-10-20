@@ -3,7 +3,7 @@ import aboutMePicture from "../assets/pictures/about_me.jpeg";
 </script>
 
 <template>
-  <section class="content">
+  <section class="content" id="aboutme">
     <h2>About me</h2>
     <div class="aboutme">
       <img class="aboutme__picture" :src="aboutMePicture" />
