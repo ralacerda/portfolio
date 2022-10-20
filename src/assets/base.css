@@ -22,7 +22,7 @@ body {
   --bg-details: var(--neutral-300);
   --hl: var(--neutral-highlight);
 
-  --display: "Khula", sans-serif;
+  --display: "Nunito Sans", sans-serif;
   --sans: "Martel Sans", sans-serif;
   --serif: "Martel", serif;
 }
