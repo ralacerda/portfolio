@@ -12,13 +12,15 @@ import TheFooter from "./components/TheFooter.vue";
 <template>
   <div class="app">
     <NavBar />
-    <TheHero />
-    <SkillsTable />
-    <ProjectList />
-    <CertificateList />
-    <AboutMe />
-    <ContactMe />
-    <TheFooter />
+    <main>
+      <TheHero />
+      <SkillsTable />
+      <ProjectList />
+      <CertificateList />
+      <AboutMe />
+      <ContactMe />
+      <TheFooter />
+    </main>
   </div>
 </template>
 
