@@ -1,36 +1,77 @@
 <script setup>
 import ThemeButton from "@/components/ThemeButton.vue";
+import OpenNav from "~icons/dashicons/menu-alt";
+import CloseNav from "~icons/dashicons/no";
+
+import { useToggle } from "@vueuse/core";
+
+const [showNav, toggleNav] = useToggle(false);
+
+const sections = {
+  "#skills": "Skills",
+  "#projects": "Projects",
+  "#certificates": "Certificates",
+  "#aboutme": "About me",
+  "#contactme": "Contact",
+};
 </script>
 
 <template>
   <nav class="navbar">
-    <div class="navbar__items content">
+    <div class="content navbar__flex">
       <header class="navbar__title">
-        <a href="#intro" class="navbar__link">Renato Lacerda</a>
+        <a href="#intro" class="navbar__link" @click.left="showNav = false"
+          >Renato Lacerda</a
+        >
+        <button class="navButton" @click="toggleNav()">
+          <component :is="showNav ? CloseNav : OpenNav" />
+        </button>
       </header>
       <div class="navbar__navigation">
-        <a href="#skills" class="navbar__link">Skills</a>
-        <a href="#projects" class="navbar__link">Projects</a>
-        <a href="#certificates" class="navbar__link">Certificates</a>
-        <a href="#aboutme" class="navbar__link">About me</a>
-        <a href="#contactme" class="navbar__link">Contact</a>
+        <a
+          v-for="(name, id) in sections"
+          class="navbar__link"
+          :key="id"
+          :href="id"
+          @click.left="showNav = false"
+        >
+          <div>{{ name }}</div></a
+        >
+        <ThemeButton class="navbar__button" />
       </div>
-      <ThemeButton class="navbar__button" />
     </div>
   </nav>
 </template>
 
 <style scoped>
 .navbar {
-  visibility: collapse;
   overflow: clip;
   background-color: var(--bg);
   transition: background-color 1s;
-  position: sticky;
+  position: fixed;
   z-index: 10;
-  top: 0;
+  inset: 0 0 auto 0;
   border-bottom: solid 1px var(--bg-details);
-  box-shadow: 0px 0px 2px 0px var(--hl);
+  box-shadow: 0px 0px 4px 2px var(--hl);
+  height: v-bind("showNav ? 'auto' : '4rem'");
+  max-height: 100%;
+}
+
+.navButton {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  place-items: center;
+  border: none;
+  background-color: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.navbar__flex {
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
 }
 
 @media (--desktop) {
@@ -40,44 +81,67 @@ import ThemeButton from "@/components/ThemeButton.vue";
 }
 
 .navbar__title {
+  height: 100%;
   font-size: 1.4rem;
   font-weight: 600;
-  grid-column: span 2;
-}
-
-.navbar__items {
+  flex-shrink: 0;
   height: 4rem;
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 8px;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-between;
 }
 
 .navbar__navigation {
-  grid-column: span 5;
+  margin-top: 1rem;
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+  justify-content: space-between;
   font-size: 1.2rem;
 }
 
 .navbar__button {
-  height: 100%;
-  width: 100%;
+  width: 44px;
+  height: 44px;
+}
+
+.navbar__button {
   justify-self: center;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
+@media (--desktop) {
+  .navButton {
+    display: none;
+  }
+
+  .navbar__flex {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: flex-start;
+  }
+
+  .navbar__navigation {
+    margin-top: 0;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .navbar__link {
-  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 75% /
+  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 65% /
     var(--p, 0%) 2px no-repeat;
   text-decoration: none;
   color: var(--fg);
   transition: 250ms, background-position 0s, color 0s;
   font-family: var(--serif);
+  white-space: nowrap;
+  padding-block: 1rem;
 }
 
 .navbar__link:hover,
