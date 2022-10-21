@@ -48,8 +48,9 @@ import Avatar from "@/assets/avatar.webp";
 }
 
 .hero {
+  padding-top: 4rem;
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 4rem 0rem;
   line-height: 1.1;
   display: grid;
   align-items: center;
@@ -64,7 +65,7 @@ import Avatar from "@/assets/avatar.webp";
 
 .avatar {
   justify-self: center;
-  box-shadow: 4px -8px 0 8px var(--danger);
+  box-shadow: 2px -4px 0 4px var(--danger);
   background-color: var(--danger);
   border-radius: 100%;
   opacity: 0;
@@ -73,18 +74,18 @@ import Avatar from "@/assets/avatar.webp";
 
 @media (--tablet) {
   .hero {
+    margin: 4rem 0;
     text-align: left;
     grid-template-columns: 1fr 1fr;
   }
   .avatar {
     justify-self: right;
+    box-shadow: 4px -8px 0 8px var(--danger);
+    height: auto;
   }
 }
 
 @media (--desktop) {
-  .hero {
-    margin: 6rem 0;
-  }
   .name {
     font-size: 3.5rem;
   }
