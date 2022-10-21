@@ -49,7 +49,7 @@ import portfolio from "@/assets/projects/portfolio.webp";
         class="project"
       >
         <p>The portfolio you are visiting right now.</p>
-        <p>Built using Vue.js, Vite and PostCSS. Hosted on GitHub Pages</p>
+        <p>Built using Vue.js, Vite and PostCSS. Hosted on Netlify</p>
       </ProjectCard>
     </div>
   </section>
