@@ -15,6 +15,7 @@ import portfolio from "@/assets/projects/portfolio.webp";
         siteUrl="https://ralacerda.github.io/coloquio-kuhn/"
         repoUrl="https://github.com/ralacerda/coloquio-kuhn"
         class="project"
+        altText="Thomas Kuhn Colloquium website"
       >
         <p>
           Website created for the academic event Thomas Kuhn Colloquium. It
@@ -31,6 +32,7 @@ import portfolio from "@/assets/projects/portfolio.webp";
         :imgUrl="f1next"
         repoUrl="https://github.com/ralacerda/f1next"
         class="project"
+        altText="F1 Next github page"
       >
         <p>
           A small script written in Python to display information about the next
@@ -47,6 +49,7 @@ import portfolio from "@/assets/projects/portfolio.webp";
         :imgUrl="portfolio"
         repoUrl="https://github.com/ralacerda/portfolio"
         class="project"
+        altText="This portfolio GitHub page"
       >
         <p>The portfolio you are visiting right now.</p>
         <p>Built using Vue.js, Vite and PostCSS. Hosted on Netlify</p>

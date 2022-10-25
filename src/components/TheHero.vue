@@ -9,7 +9,7 @@ import Avatar from "@/assets/avatar.webp";
       <img
         class="avatar"
         :src="Avatar"
-        alt="A picture of Renato, smiling and wearing a red tie"
+        alt="Renato, smiling and wearing a red tie"
       />
       <div>
         <h1 class="name">Hi, I'm Renato</h1>

@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
+defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 </script>
 
 <template>
@@ -25,7 +25,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl"]);
 
     <div class="preview-background">
       <a :href="siteUrl ? siteUrl : repoUrl" target="_blank">
-        <img :src="imgUrl" alt="Project Screenshot" class="project-preview" />
+        <img :src="imgUrl" :alt="altText" class="project-preview" />
       </a>
     </div>
   </div>

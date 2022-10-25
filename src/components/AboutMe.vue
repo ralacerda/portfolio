@@ -6,7 +6,11 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
   <section class="content" id="aboutme">
     <h2>About me</h2>
     <div class="aboutme">
-      <img class="aboutme__picture" :src="aboutMePicture" />
+      <img
+        class="aboutme__picture"
+        :src="aboutMePicture"
+        alt="Renato crouching on high grass while looking through binoculars"
+      />
       <div class="aboutme__text">
         <p class="aboutme__paragraph">
           I'm a brazilian Biologist, graduated from the University of São Paulo,

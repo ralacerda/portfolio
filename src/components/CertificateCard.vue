@@ -7,7 +7,7 @@ defineProps(["title", "img", "url"]);
     <h3 class="certificate-title">{{ title }}</h3>
     <a :href="url" target="_blank">
       <div class="certificate-card">
-        <img class="certificate-image" :src="img" />
+        <img class="certificate-image" :src="img" alt="" />
         <div class="certificate-text">
           <slot></slot>
         </div>
