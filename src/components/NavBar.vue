@@ -23,7 +23,11 @@ const sections = {
         <a href="#intro" class="navbar__link" @click.left="showNav = false"
           >Renato Lacerda</a
         >
-        <button class="navButton" @click="toggleNav()">
+        <button
+          class="navButton"
+          @click="toggleNav()"
+          aria-label="Toggle navigation menu"
+        >
           <component :is="showNav ? CloseNav : OpenNav" />
         </button>
       </header>
