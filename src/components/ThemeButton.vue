@@ -8,7 +8,7 @@ const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-  <div @click="toggleDark()">
+  <button @click="toggleDark()" class="click-area">
     <Transition name="fade" mode="out-in">
       <KeepAlive>
         <component
@@ -17,10 +17,16 @@ const toggleDark = useToggle(isDark);
         ></component>
       </KeepAlive>
     </Transition>
-  </div>
+  </button>
 </template>
 
 <style scoped>
+.click-area {
+  border: 0;
+  color: inherit;
+  background-color: inherit;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: 0.8s ease;
