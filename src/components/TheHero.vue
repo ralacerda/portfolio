@@ -6,7 +6,11 @@ import Avatar from "@/assets/avatar.webp";
 <template>
   <section class="content" id="intro">
     <div class="hero">
-      <img class="avatar" :src="Avatar" />
+      <img
+        class="avatar"
+        :src="Avatar"
+        alt="A picture of Renato, smiling and wearing a red tie"
+      />
       <div>
         <h1 class="name">Hi, I'm Renato</h1>
         <div class="position">
