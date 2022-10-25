@@ -8,7 +8,11 @@ const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-  <button @click="toggleDark()" class="click-area">
+  <button
+    @click="toggleDark()"
+    class="click-area"
+    aria-label="Change color theme"
+  >
     <Transition name="fade" mode="out-in">
       <KeepAlive>
         <component
