@@ -2,9 +2,10 @@
 import ThemeButton from "@/components/ThemeButton.vue";
 import OpenNav from "~icons/dashicons/menu-alt";
 import CloseNav from "~icons/dashicons/no";
-
 import { useToggle } from "@vueuse/core";
+import { useWindowScroll } from "@vueuse/core";
 
+const { y } = useWindowScroll();
 const [showNav, toggleNav] = useToggle(false);
 
 const sections = {
@@ -17,12 +18,12 @@ const sections = {
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="[y > 0 ? 'navbar_shadow' : '']">
     <div class="content navbar__flex">
       <header class="navbar__title">
-        <a href="#intro" class="navbar__link" @click.left="showNav = false"
-          >Renato Lacerda</a
-        >
+        <a href="#intro" class="navbar__link" @click.left="showNav = false">
+          Renato Lacerda
+        </a>
         <button
           class="navButton"
           @click="toggleNav()"
@@ -51,14 +52,24 @@ const sections = {
 .navbar {
   overflow: clip;
   background-color: var(--bg);
-  transition: background-color 1s;
+  transition: background-color 1s, box-shadow 500ms;
   position: fixed;
   z-index: 10;
   inset: 0 0 auto 0;
-  border-bottom: solid 1px var(--bg-details);
-  box-shadow: 0px 0px 4px 2px var(--hl);
   height: v-bind("showNav ? 'auto' : '4rem'");
+  box-shadow: 0px 0px 4px 2px var(--hl);
   max-height: 100%;
+}
+
+@media (--desktop) {
+  .navbar {
+    visibility: visible;
+    box-shadow: unset;
+  }
+}
+
+.navbar_shadow {
+  box-shadow: 0px 0px 4px 2px var(--hl);
 }
 
 .navButton {
@@ -76,12 +87,6 @@ const sections = {
   display: flex;
   flex-flow: column;
   justify-items: center;
-}
-
-@media (--desktop) {
-  .navbar {
-    visibility: visible;
-  }
 }
 
 .navbar__title {
