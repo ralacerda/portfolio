@@ -18,7 +18,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         url="https://www.sololearn.com/certificates/CT-KM0ZBUKV"
         class="sololearn"
       >
-        Certificate provided by Sololearn for the course "Javascript", which
+        Certificate provided by Sololearn for the course "Javascript" which
         included lessons and challenges
       </CertificateCard>
 
@@ -28,7 +28,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         url="https://www.sololearn.com/certificates/CT-HKASY6WE"
         class="sololearn"
       >
-        Certificate provided by Sololearn for the course "React + Redux", which
+        Certificate provided by Sololearn for the course "React + Redux" which
         included lessons and quizzes
       </CertificateCard>
 
@@ -38,7 +38,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         url="https://www.sololearn.com/certificates/CT-Y83WZJCZ"
         class="sololearn"
       >
-        Certificate provided by Sololearn for the course "Python Core", which
+        Certificate provided by Sololearn for the course "Python Core" which
         included lessons and challenges
       </CertificateCard>
 
@@ -49,7 +49,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         class="freecodecamp right"
       >
         Certificate provided by freeCodeCamp for the course "JavaScript
-        Algorithms and Data Structures", which included lessons and five
+        Algorithms and Data Structures" which included lessons and five
         challenges. Solutions are available in the certificate link.
       </CertificateCard>
 
@@ -60,7 +60,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         class="freecodecamp left"
       >
         Certificate provided by freeCodeCamp for the course "Responsive Web
-        Design", which included lessons and five challenges. Solutions are
+        Design" which included lessons and five challenges. Solutions are
         available in the certificate link.
       </CertificateCard>
       <CertificateCard
@@ -70,7 +70,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         class="freecodecamp left"
       >
         Certificate provided by Linkedin for the course "Agile Software
-        Development", which included 1 hour and 53 minutes of video lessons and
+        Development" which included 1 hour and 53 minutes of video lessons and
         quizzes
       </CertificateCard>
     </div>
