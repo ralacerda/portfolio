@@ -1,16 +1,29 @@
 @import "./reset.css";
 @import "./base.css";
+body {
+  color: var(--fg);
+  font-family: "Nunito Sans", sans-serif;
+  font-display: swap;
+}
+
+html:focus-within {
+  scroll-padding-top: 6rem;
+}
+
+body :any-link:not([class]) {
+  color: var(--fg);
+  text-decoration: underline solid var(--danger);
+}
 
 h2 {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
   margin-top: 6rem;
-  font-family: var(--display);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 400;
 }
 

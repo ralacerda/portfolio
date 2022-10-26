@@ -21,9 +21,6 @@ body {
   --bg-secondary: var(--neutral-200);
   --bg-details: var(--neutral-300);
   --hl: var(--neutral-highlight);
-
-  --display: "Nunito Sans", sans-serif;
-  --sans: "Martel Sans", sans-serif;
 }
 
 .dark {
@@ -35,19 +32,4 @@ body {
   --bg: var(--neutral-900);
   --bg-secondary: var(--neutral-800);
   --bg-details: var(--neutral-700);
-}
-
-body {
-  color: var(--fg);
-  font-family: var(--sans);
-  font-display: swap;
-}
-
-html:focus-within {
-  scroll-padding-top: 6rem;
-}
-
-body :any-link:not([class]) {
-  color: var(--fg);
-  text-decoration: underline solid var(--danger);
 }

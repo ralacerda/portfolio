@@ -59,7 +59,6 @@ const sections = {
   height: v-bind("showNav ? 'auto' : '4rem'");
   box-shadow: 0px 0px 4px 2px var(--hl);
   max-height: 100%;
-  font-family: var(--display);
 }
 
 @media (--desktop) {
