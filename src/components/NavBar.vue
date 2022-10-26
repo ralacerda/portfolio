@@ -40,7 +40,7 @@ const sections = {
           :href="id"
           @click.left="showNav = false"
         >
-          <div>{{ name }}</div></a
+          {{ name }}</a
         >
         <ThemeButton class="navbar__button" />
       </div>
@@ -59,6 +59,7 @@ const sections = {
   height: v-bind("showNav ? 'auto' : '4rem'");
   box-shadow: 0px 0px 4px 2px var(--hl);
   max-height: 100%;
+  font-family: var(--display);
 }
 
 @media (--desktop) {
@@ -143,14 +144,12 @@ const sections = {
   }
 }
 .navbar__link {
-  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 65% /
+  background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 80% /
     var(--p, 0%) 2px no-repeat;
   text-decoration: none;
   color: var(--fg);
   transition: 250ms, background-position 0s, color 0s;
-  font-family: var(--serif);
   white-space: nowrap;
-  padding-block: 1rem;
 }
 
 .navbar__link:hover,
