@@ -11,8 +11,8 @@ body {
   --neutral-700: #54585f;
   --neutral-800: #3b4048;
   --neutral-900: #222831;
-  --neutral-highlight: #3b404820;
   --danger: #ef5e5e;
+  --shadow: #00000020;
 
   --fg: var(--neutral-900);
   --fg-secondary: var(--neutral-800);
@@ -20,7 +20,6 @@ body {
   --bg: var(--neutral-100);
   --bg-secondary: var(--neutral-200);
   --bg-details: var(--neutral-300);
-  --hl: var(--neutral-highlight);
 }
 
 .dark {

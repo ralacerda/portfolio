@@ -77,6 +77,6 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
   width: 240px;
   grid-area: photo;
   border-radius: 100%;
-  box-shadow: 0px 0px 3px 4px var(--hl);
+  box-shadow: 0px 0px 3px 4px var(--shadow);
 }
 </style>

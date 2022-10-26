@@ -57,7 +57,7 @@ const sections = {
   z-index: 10;
   inset: 0 0 auto 0;
   height: v-bind("showNav ? 'auto' : '4rem'");
-  box-shadow: 0px 0px 4px 2px var(--hl);
+  box-shadow: 0px 0px 4px 2px var(--shadow);
   max-height: 100%;
 }
 
@@ -69,7 +69,7 @@ const sections = {
 }
 
 .navbar_shadow {
-  box-shadow: 0px 0px 4px 2px var(--hl);
+  box-shadow: 0px 0px 4px 2px var(--shadow);
 }
 
 .navButton {

@@ -24,7 +24,7 @@ defineProps(["title", "img", "url"]);
 .certificate-image {
   transition: inherit;
   border-radius: 6px;
-  box-shadow: 0px 0px 3px 4px var(--hl);
+  box-shadow: 0px 0px 3px 4px var(--shadow);
 }
 
 .certificate-text {
