@@ -12,7 +12,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
       <slot> </slot>
       <div class="links">
         <a v-if="siteUrl" :href="siteUrl" class="button-link" target="_blank"
-          >Live website</a
+          >Visit the website</a
         >
         <a
           :href="repoUrl"
