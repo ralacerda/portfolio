@@ -50,7 +50,7 @@ const sections = {
 
 <style scoped>
 .navbar {
-  overflow: clip;
+  overflow: hidden;
   background-color: var(--bg);
   transition: background-color 1s, box-shadow 500ms;
   position: fixed;
