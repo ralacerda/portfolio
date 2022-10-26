@@ -100,7 +100,12 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 }
 .description {
   grid-area: description;
-  margin-right: 8px;
+}
+
+@media (--tablet) {
+  .description {
+    margin-right: 64px;
+  }
 }
 
 .description > :deep(p) {
