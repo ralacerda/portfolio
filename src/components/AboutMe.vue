@@ -15,7 +15,7 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
         <p class="aboutme__paragraph">
           I'm a Brazilian biologist, who graduated from the University of São
           Paulo, finishing my Master's degree in Ecology from the University of
-          Campinas, and currently changing careers in web development.
+          Campinas, and currently changing careers to web development.
         </p>
         <p class="aboutme__paragraph">
           I learned python scripting and data analysis with R during my
@@ -24,8 +24,8 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
         </p>
         <p class="aboutme__paragraph">
           I've been using GNU/Linux since 2018, which has taught me how to use
-          the command line in-depth, as well as learning how to navigate and
-          solve problems with the Operating System.
+          the command line in-depth, navigate and solve problems with the
+          Operating System.
         </p>
         <p class="aboutme__paragraph">
           At this moment, I'm focused on Front-end development. I have practical
@@ -60,8 +60,8 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
 
 @media (--tablet) {
   .aboutme {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "text text photo";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text photo";
   }
 }
 
@@ -74,9 +74,15 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
 }
 
 .aboutme__picture {
-  width: 240px;
+  max-width: 360px;
   grid-area: photo;
   border-radius: 100%;
   box-shadow: 0px 0px 3px 4px var(--shadow);
+}
+
+@media (--tablet) {
+  .aboutme__picture {
+    justify-self: center;
+  }
 }
 </style>
