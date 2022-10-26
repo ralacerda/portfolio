@@ -88,7 +88,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
   margin-top: 1rem;
   display: flex;
   flex-flow: column;
-  row-gap: 2rem;
+  row-gap: 1rem;
   column-gap: 2rem;
   align-items: center;
 }

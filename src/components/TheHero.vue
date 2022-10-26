@@ -57,18 +57,16 @@ import Avatar from "@/assets/avatar.webp";
   margin: 4rem 0rem;
   line-height: 1.1;
   display: grid;
-  align-items: center;
+  place-items: center;
   place-content: center;
   grid-template-columns: 1fr;
-  column-gap: 48px;
+  column-gap: 8px;
   row-gap: 16px;
-  font-family: var(--display);
   background-color: var(--bg);
   transition: background-color 1s;
 }
 
 .avatar {
-  justify-self: center;
   box-shadow: 2px -4px 0 4px var(--danger);
   background-color: var(--danger);
   border-radius: 100%;
@@ -76,20 +74,16 @@ import Avatar from "@/assets/avatar.webp";
   animation: 0.4s ease-out forwards fadeIn;
 }
 
-@media (--tablet) {
+@media (--desktop) {
   .hero {
     margin: 4rem 0;
     text-align: left;
     grid-template-columns: 1fr 1fr;
   }
   .avatar {
-    justify-self: right;
     box-shadow: 4px -8px 0 8px var(--danger);
     height: auto;
   }
-}
-
-@media (--desktop) {
   .name {
     font-size: 3.5rem;
   }
