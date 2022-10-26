@@ -1,12 +1,12 @@
 <script setup>
 const skills = {
   Developer: [
-    "GNU/Linux",
+    "Linux",
     "Git",
     "Github",
+    "Command Line",
     "Bash scripting",
     "Python scripting",
-    "Node",
   ],
   "Front-end": ["HTML5", "CSS3", "Tailwind", "Bootstrap", "Javascript", "Vue"],
   Personal: [
