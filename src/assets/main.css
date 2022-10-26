@@ -45,18 +45,17 @@ h3 {
 
 .button-link {
   text-decoration: none;
-  transition: 200ms, background-position 0s;
-  background: linear-gradient(var(--danger) 0 0) 0% 100% / 100% var(--p, 0%)
-    no-repeat;
+  transition: 200ms;
   border: solid 1px var(--danger);
   width: fit-content;
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 1rem;
   border-radius: 0.5rem;
   color: var(--fg);
+  line-height: 1.4;
 }
 
 .button-link:hover,
 .button-link:focus-visible {
   color: var(--neutral-900);
-  --p: 100%;
+  background-color: var(--danger);
 }
