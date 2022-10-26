@@ -18,9 +18,12 @@ import portfolio from "@/assets/projects/portfolio.webp";
         altText="Thomas Kuhn Colloquium website"
       >
         <p>Website created for the academic event Thomas Kuhn Colloquium.</p>
-        <p>
-          Built with Eleventy, AlpineJS and Tailwind, hosted on Github Pages
-        </p>
+        <ul class="project-tools">
+          <li>Eleventy</li>
+          <li>AlpineJS</li>
+          <li>Tailwind</li>
+          <li>Hosted on Github Pages</li>
+        </ul>
       </ProjectCard>
 
       <ProjectCard
@@ -30,7 +33,13 @@ import portfolio from "@/assets/projects/portfolio.webp";
         class="project"
         altText="This portfolio GitHub page"
       >
-        <p>Built using Vue.js, Vite and PostCSS. Hosted on Netlify</p>
+        <p>A portfolio to show case my projects, skills and experiences.</p>
+        <ul class="project-tools">
+          <li>Vue</li>
+          <li>Vite</li>
+          <li>PostCSS</li>
+          <li>Hosted on Netlify</li>
+        </ul>
       </ProjectCard>
 
       <ProjectCard
@@ -49,4 +58,15 @@ import portfolio from "@/assets/projects/portfolio.webp";
   </section>
 </template>
 
-<style></style>
+<style scoped>
+.project-tools {
+  padding-left: 0;
+}
+.project-tools li {
+  list-style-position: inside;
+}
+
+.project-tools li::marker {
+  color: var(--danger);
+}
+</style>
