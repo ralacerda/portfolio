@@ -25,13 +25,13 @@ h3 {
 }
 
 .inline-link {
-  text-decoration: underline 0.1rem var(--danger);
-  color: var(--fg-details);
+  text-decoration: underline 2px var(--danger);
+  color: var(--fg);
 }
 
 .inline-link:hover,
 .inline-link:focus-visible {
-  color: var(--fg);
+  color: var(--fg-details);
 }
 
 .button-link {
