@@ -13,33 +13,34 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
       />
       <div class="aboutme__text">
         <p class="aboutme__paragraph">
-          I'm a brazilian Biologist, graduated from the University of São Paulo,
-          finishing my Master's degree in Ecology from the University of
-          Campinas, currently changing careers into web development.
+          I'm a Brazilian biologist, who graduated from the University of São
+          Paulo, finishing my Master's degree in Ecology from the University of
+          Campinas, and currently changing careers in web development.
         </p>
         <p class="aboutme__paragraph">
-          I've always enjoyed programming. During my undergraduate studies, I
-          learned how to write python script to automate task, and analyze and
-          display data with R, I sharpened those skills during my graduate
-          studies. I've been using GNU/Linux as my OS since 2018, which has
-          taught me how to use the command line in depth, as well as learning
-          how to navigate and solve problems in GNU/Linux.
+          I learned python scripting and data analysis with R during my
+          undergraduate studies, sharpening those skills during my graduate
+          studies.
         </p>
         <p class="aboutme__paragraph">
-          At this moment, I'm focused on learning Front-end technologies. I have
-          practical skills of Javascript, HTML5, CSS3, a basic notion of React,
-          Tailwind and Bootstrap, and solid knowledge of Vue and Vite. I also
-          have experience in creating sites for events, usage of the command
-          line, Git, Github, and Python. I've contributed with code and
-          documentation for Open Source projects.
+          I've been using GNU/Linux since 2018, which has taught me how to use
+          the command line in-depth, as well as learning how to navigate and
+          solve problems with the Operating System.
         </p>
         <p class="aboutme__paragraph">
-          I am a free software enthusiast, board games, computer games and
+          At this moment, I'm focused on Front-end development. I have practical
+          knowledge of Javascript, HTML5, CSS3, and Vuejs. I also have
+          experience creating sites for events, and using the command line, Git,
+          Github, and Python. I've contributed code and documentation for Open
+          Source projects.
+        </p>
+        <p class="aboutme__paragraph">
+          I am a free software enthusiast, board games, computer games, and
           Formula 1 fan. I also enjoy cooking and baking bread on weekends.
         </p>
         <p class="aboutme__paragraph">
           I'm looking for an opportunity to help me evolve as a developer. I'm
-          excited to learn new skills and to strengthen that ones that I have.
+          excited to learn new skills and strengthen those that I have.
         </p>
       </div>
     </div>

@@ -10,7 +10,7 @@ import Codepen from "~icons/mdi/codepen";
     <h2>Contact</h2>
     <p class="contact__text">
       Do think I'm a good fit for your company? <br />
-      Do you have an learning opportunity for me? <br />
+      Do you have a learning opportunity for me? <br />
       Any feedbacks or questions? Please, let me know!
     </p>
 

@@ -49,7 +49,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         class="freecodecamp right"
       >
         Certificate provided by freeCodeCamp for the course "JavaScript
-        Algorithms and Data Structures", which included lessons and 5
+        Algorithms and Data Structures", which included lessons and five
         challenges. Solutions are available in the certificate link.
       </CertificateCard>
 
@@ -60,7 +60,7 @@ import linkedinAgile from "../assets/certificates/agile.webp";
         class="freecodecamp left"
       >
         Certificate provided by freeCodeCamp for the course "Responsive Web
-        Design", which included lessons and 5 challenges. Solutions are
+        Design", which included lessons and five challenges. Solutions are
         available in the certificate link.
       </CertificateCard>
       <CertificateCard
