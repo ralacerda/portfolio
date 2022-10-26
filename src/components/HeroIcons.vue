@@ -1,14 +1,23 @@
 <script setup>
 import IconBash from "~icons/simple-icons/gnubash";
 import Git from "~icons/simple-icons/git";
-import Github from "~icons/simple-icons/github";
 import Html from "~icons/simple-icons/html5";
 import Css from "~icons/simple-icons/css3";
 import Tailwind from "~icons/simple-icons/tailwindcss";
+import Bootstrap from "~icons/simple-icons/bootstrap";
 import Javascript from "~icons/simple-icons/javascript";
 import Vue from "~icons/simple-icons/vuejs";
 
-const iconList = [IconBash, Git, Github, Html, Css, Tailwind, Javascript, Vue];
+const iconList = [
+  IconBash,
+  Git,
+  Html,
+  Css,
+  Tailwind,
+  Bootstrap,
+  Javascript,
+  Vue,
+];
 </script>
 
 <template>
