@@ -17,14 +17,20 @@ import portfolio from "@/assets/projects/portfolio.webp";
         class="project"
         altText="Thomas Kuhn Colloquium website"
       >
-        <p>
-          Website created for the academic event Thomas Kuhn Colloquium. It
-          includes information about the event location, dates, guests, talks
-          and schedule.",
-        </p>
+        <p>Website created for the academic event Thomas Kuhn Colloquium.</p>
         <p>
           Built with Eleventy, AlpineJS and Tailwind, hosted on Github Pages
         </p>
+      </ProjectCard>
+
+      <ProjectCard
+        title="Portfolio"
+        :imgUrl="portfolio"
+        repoUrl="https://github.com/ralacerda/portfolio"
+        class="project"
+        altText="This portfolio GitHub page"
+      >
+        <p>Built using Vue.js, Vite and PostCSS. Hosted on Netlify</p>
       </ProjectCard>
 
       <ProjectCard
@@ -38,21 +44,6 @@ import portfolio from "@/assets/projects/portfolio.webp";
           A small script written in Python to display information about the next
           Formula 1 Grand Prix from the terminal.
         </p>
-        <p>
-          It includes flags for showing the full weekend schedule or a countdown
-          to the next event.
-        </p>
-      </ProjectCard>
-
-      <ProjectCard
-        title="My Portfolio"
-        :imgUrl="portfolio"
-        repoUrl="https://github.com/ralacerda/portfolio"
-        class="project"
-        altText="This portfolio GitHub page"
-      >
-        <p>The portfolio you are visiting right now.</p>
-        <p>Built using Vue.js, Vite and PostCSS. Hosted on Netlify</p>
       </ProjectCard>
     </div>
   </section>
