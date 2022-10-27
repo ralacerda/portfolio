@@ -4,13 +4,17 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 
 <template>
   <div class="project">
-    <h3 class="title">
+    <h4 class="title">
       {{ title }}
-    </h3>
-
+    </h4>
+    <div class="preview-background">
+      <a :href="siteUrl ? siteUrl : repoUrl" target="_blank">
+        <img :src="imgUrl" :alt="altText" class="project-preview" />
+      </a>
+    </div>
     <div class="description">
       <slot> </slot>
-      <div class="links">
+      <span class="links">
         <a v-if="siteUrl" :href="siteUrl" class="button-link" target="_blank"
           >Visit the website</a
         >
@@ -20,13 +24,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
           target="_blank"
           >Source code</a
         >
-      </div>
-    </div>
-
-    <div class="preview-background">
-      <a :href="siteUrl ? siteUrl : repoUrl" target="_blank">
-        <img :src="imgUrl" :alt="altText" class="project-preview" />
-      </a>
+      </span>
     </div>
   </div>
 </template>
@@ -34,26 +32,8 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 <style scoped>
 .project {
   margin-bottom: 4rem;
-  --screenshot-offset: -12px, -12px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "title"
-    "screenshot"
-    "description";
-
-  align-items: start;
-  grid-template-rows: auto 1fr;
-  column-gap: 8px;
-}
-
-@media (--tablet) {
-  .project {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title screenshot"
-      "description screenshot ";
-  }
+  --screenshot-offset: -4px, -4px;
+  margin-right: 64px;
 }
 
 .title {
@@ -62,10 +42,8 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 
 .preview-background {
   background-color: var(--danger);
-  grid-area: screenshot;
-  align-self: start;
   border-radius: 3px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .project-preview {
@@ -76,28 +54,19 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 
 .project-preview:hover,
 .project-preview:focus-visible {
-  box-shadow: 0px 0px 4px 2px var(--shadow);
+  box-shadow: 0px 0px 2px 1px var(--shadow);
   transform: translate(var(--screenshot-offset));
 }
 
 .links {
-  margin-top: 1rem;
-  display: flex;
+  display: inline-flex;
   row-gap: 1rem;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  column-gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.description {
-  grid-area: description;
-}
-
-@media (--tablet) {
-  .description {
-    margin-right: 64px;
-  }
+.inline-link {
+  margin-left: 1rem;
 }
 
 .description > :deep(p) {
