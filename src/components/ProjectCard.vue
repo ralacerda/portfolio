@@ -1,4 +1,6 @@
 <script setup>
+import OpenInNew from "~icons/mdi/open-in-new";
+
 defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 </script>
 
@@ -12,14 +14,14 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
       <slot> </slot>
       <div class="links">
         <a v-if="siteUrl" :href="siteUrl" class="button-link" target="_blank"
-          >Visit the website</a
-        >
+          >Visit the website<OpenInNew style="font-size: 0.8rem"
+        /></a>
         <a
           :href="repoUrl"
           :class="siteUrl ? 'inline-link' : 'button-link'"
           target="_blank"
-          >Source code</a
-        >
+          >Source code<OpenInNew style="font-size: 0.8rem"
+        /></a>
       </div>
     </div>
 
