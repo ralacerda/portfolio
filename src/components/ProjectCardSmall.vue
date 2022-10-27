@@ -47,14 +47,13 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 }
 
 .project-preview {
-  box-shadow: 0px 0px 2px 2px var(--shadow);
+  box-shadow: 0px 0px 4px var(--shadow);
   transition: box-shadow 200ms, transform 200ms;
   border-radius: 3px;
 }
 
 .project-preview:hover,
 .project-preview:focus-visible {
-  box-shadow: 0px 0px 2px 1px var(--shadow);
   transform: translate(var(--screenshot-offset));
 }
 
