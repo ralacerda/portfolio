@@ -2,7 +2,7 @@
 import ProjectCard from "./ProjectCard.vue";
 import ProjectCardSmall from "./ProjectCardSmall.vue";
 import kuhn from "@/assets/projects/kuhn.webp";
-import f1next from "@/assets/projects/f1next.png";
+import f1next from "@/assets/projects/f1next.webp";
 import portfolio from "@/assets/projects/portfolio.webp";
 import fem_preview from "@/assets/projects/fem_preview.png";
 import fem_qrcode from "@/assets/projects/fem_qrcode.png";
@@ -90,6 +90,10 @@ import fem_qrcode from "@/assets/projects/fem_qrcode.png";
           A small script written in Python to display information about the next
           Formula 1 Grand Prix from the terminal.
         </p>
+        <ul class="project-tools">
+          <li>Python</li>
+          <li>Rest API</li>
+        </ul>
       </ProjectCardSmall>
     </div>
   </section>
@@ -105,23 +109,5 @@ import fem_qrcode from "@/assets/projects/fem_qrcode.png";
 
 .project-tools li::marker {
   color: var(--danger);
-}
-
-.other-projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 8px;
-}
-
-@media (--tablet) {
-  .other-projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (--desktop) {
-  .other-projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 </style>

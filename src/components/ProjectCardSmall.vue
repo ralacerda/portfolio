@@ -31,9 +31,32 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 
 <style scoped>
 .project {
+  display: grid;
   margin-bottom: 4rem;
   --screenshot-offset: -4px, -4px;
   margin-right: 64px;
+  column-gap: 32px;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "screenshot"
+    "description";
+}
+
+@media (--tablet) {
+  .project {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "screenshot description";
+  }
+}
+
+@media (--desktop) {
+  .project {
+    grid-template-columns: 33% 33%;
+  }
 }
 
 .title {
@@ -41,6 +64,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 }
 
 .preview-background {
+  grid-area: screenshot;
   background-color: var(--danger);
   border-radius: 3px;
   margin-bottom: 1rem;
