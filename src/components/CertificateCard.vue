@@ -1,34 +1,42 @@
 <script setup>
-defineProps(["title", "img", "url"]);
+defineProps(["title", "provider", "img", "url"]);
 </script>
 
 <template>
   <div>
     <h3 class="certificate-title">{{ title }}</h3>
-    <a :href="url" target="_blank">
-      <div class="certificate-card">
-        <img class="certificate-image" :src="img" alt="" />
-        <div class="certificate-text">
-          <slot></slot>
-        </div>
-      </div>
-    </a>
+    <div class="certificate-provider">{{ provider }}</div>
+
+    <div class="certificate-background">
+      <a :href="url" target="_blank">
+        <img
+          class="certificate-image"
+          :src="img"
+          alt="Verify this certificate"
+        />
+      </a>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .certificate-title {
-  font-size: 1rem;
-  white-space: nowrap;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.certificate-provider {
+  color: var(--fg-details);
+  margin-bottom: 1rem;
 }
 .certificate-image {
   transition: inherit;
   border-radius: 6px;
-  box-shadow: 0px 0px 3px 4px var(--shadow);
+  box-shadow: 0px 0px 3px var(--shadow);
+  transition: transform 200ms;
 }
 
 .certificate-text {
-  color: var(--neutral-100);
   transition: inherit;
   opacity: 0;
   position: absolute;
@@ -43,17 +51,13 @@ defineProps(["title", "img", "url"]);
   text-align: center;
 }
 
-.certificate-card {
-  position: relative;
-  transition: 0.3s;
-}
-.certificate-card:hover .certificate-text,
-.certificate-card:focus-visible .certificate-text {
-  opacity: 1;
+.certificate-background {
+  background-color: var(--danger);
+  border-radius: 6px;
 }
 
-.certificate-card:hover .certificate-image,
-.certificate-card:focus-visible .certificate-image {
-  filter: brightness(20%);
+.certificate-image:hover,
+.certificate-image:focus-visible {
+  transform: translate(-5px, -5px);
 }
 </style>
