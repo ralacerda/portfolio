@@ -1,11 +1,12 @@
 <script setup>
 const skills = {
-  Developer: ["Linux", "Git & GitHub", "Bash scripting", "Python scripting"],
-  "Front-end": ["HTML5 & CSS3", "Tailwind & Bootstrap", "Javascript", "Vue"],
+  Developer: ["Linux", "Git", "GitHub", "Bash scripting", "Python scripting"],
+  "Front-end": ["HTML5 & CSS3", "Tailwind", "Bootstrap", "Javascript", "Vue"],
   Personal: [
     "Fluent English",
     "Always learning",
     "Problem solver",
+    "Avid reader",
     "Open source enthusiast",
   ],
 };
@@ -20,10 +21,12 @@ const skills = {
         :key="category"
         class="column"
       >
-        <div class="header skill">{{ category }}</div>
-        <div v-for="skill in skillList" :key="skill" class="skill">
-          {{ skill }}
-        </div>
+        <div class="header">{{ category }}</div>
+        <ul>
+          <li v-for="skill in skillList" :key="skill" class="skill">
+            {{ skill }}
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -53,11 +56,9 @@ const skills = {
 }
 
 .skill {
-  padding-left: 4px;
-  padding-top: 1.2rem;
+  padding-top: 0.8rem;
   margin: 0 auto;
-  line-height: 1.4;
-  border-bottom: 0.1rem solid var(--bg-secondary);
+  line-height: 1.6;
 }
 
 .header {
