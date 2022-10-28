@@ -1,20 +1,11 @@
 <script setup>
 const skills = {
-  Developer: [
-    "Linux",
-    "Git",
-    "Github",
-    "Command Line",
-    "Bash scripting",
-    "Python scripting",
-  ],
-  "Front-end": ["HTML5", "CSS3", "Tailwind", "Bootstrap", "Javascript", "Vue"],
+  Developer: ["Linux", "Git & GitHub", "Bash scripting", "Python scripting"],
+  "Front-end": ["HTML5 & CSS3", "Tailwind & Bootstrap", "Javascript", "Vue"],
   Personal: [
     "Fluent English",
-    "Avid reader",
     "Always learning",
     "Problem solver",
-    "Good communicator",
     "Open source enthusiast",
   ],
 };
