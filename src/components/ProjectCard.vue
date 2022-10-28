@@ -14,13 +14,15 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
       <slot> </slot>
       <div class="links">
         <a v-if="siteUrl" :href="siteUrl" class="button-link" target="_blank"
-          >Visit the website<OpenInNew style="font-size: 0.8rem"
+          >Visit the website<OpenInNew
+            style="font-size: 0.8rem; color: var(--fg-details)"
         /></a>
         <a
           :href="repoUrl"
           :class="siteUrl ? 'inline-link' : 'button-link'"
           target="_blank"
-          >Source code<OpenInNew style="font-size: 0.8rem"
+          >Source code<OpenInNew
+            style="font-size: 0.8rem; color: var(--fg-details)"
         /></a>
       </div>
     </div>
