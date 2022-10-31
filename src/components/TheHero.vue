@@ -14,7 +14,7 @@ import Avatar from "@/assets/avatar.webp";
       <div>
         <h1 class="name">Hi, I'm Renato</h1>
         <div class="position">
-          Looking for a learning opportunity as a Front-end developer
+          Looking for a junior position as a Front-end developer
         </div>
         <div class="cta">
           <a href="#projects" class="button-link"> See my projects </a>
