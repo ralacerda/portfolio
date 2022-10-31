@@ -86,6 +86,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 }
 
 .links {
+  margin-top: 1rem;
   display: inline-flex;
   row-gap: 1rem;
   align-items: center;

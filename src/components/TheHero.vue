@@ -33,6 +33,10 @@ import Avatar from "@/assets/avatar.webp";
   opacity: 0;
 }
 
+.button-link {
+  margin-inline: auto;
+}
+
 .name {
   font-size: 2.5rem;
   opacity: 0;
@@ -75,6 +79,10 @@ import Avatar from "@/assets/avatar.webp";
 }
 
 @media (--desktop) {
+  .button-link {
+    margin-inline: unset;
+  }
+
   .hero {
     margin: 4rem 0;
     text-align: left;
