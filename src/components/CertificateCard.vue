@@ -13,6 +13,7 @@ defineProps(["title", "provider", "img", "url"]);
           class="certificate-image"
           :src="img"
           alt="Verify this certificate"
+          loading="lazy"
         />
       </a>
     </div>

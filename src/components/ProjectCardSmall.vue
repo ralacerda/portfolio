@@ -11,7 +11,12 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
     </h4>
     <div class="preview-background">
       <a :href="siteUrl ? siteUrl : repoUrl" target="_blank">
-        <img :src="imgUrl" :alt="altText" class="project-preview" />
+        <img
+          :src="imgUrl"
+          :alt="altText"
+          class="project-preview"
+          loading="lazy"
+        />
       </a>
     </div>
     <div class="description">

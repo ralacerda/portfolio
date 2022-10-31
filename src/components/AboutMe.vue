@@ -10,6 +10,7 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
         class="aboutme__picture"
         :src="aboutMePicture"
         alt="Renato crouching on high grass while looking through binoculars"
+        loading="lazy"
       />
       <div class="aboutme__text">
         <p class="aboutme__paragraph">
