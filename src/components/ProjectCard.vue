@@ -17,10 +17,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
           >Visit the website<OpenInNew
             style="font-size: 0.8rem; color: var(--fg-details)"
         /></a>
-        <a
-          :href="repoUrl"
-          :class="siteUrl ? 'inline-link' : 'button-link'"
-          target="_blank"
+        <a v-if="repoUrl" :href="repoUrl" class="inline-link" target="_blank"
           >Source code<OpenInNew
             style="font-size: 0.8rem; color: var(--fg-details)"
         /></a>
