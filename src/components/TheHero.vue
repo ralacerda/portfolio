@@ -51,7 +51,7 @@ import Avatar from "@/assets/avatar.webp";
   animation: 0.4s ease-out 0.8s forwards fadeIn;
   position: relative;
   display: block;
-  max-width: fit-content;
+  max-width: 20ch;
   overflow: hidden;
 }
 
