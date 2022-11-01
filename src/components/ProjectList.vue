@@ -4,8 +4,8 @@ import ProjectCardSmall from "./ProjectCardSmall.vue";
 import kuhn from "@/assets/projects/kuhn.webp";
 import f1next from "@/assets/projects/f1next.webp";
 import portfolio from "@/assets/projects/portfolio.webp";
-import fem_preview from "@/assets/projects/fem_preview.png";
-import fem_qrcode from "@/assets/projects/fem_qrcode.png";
+import fem_preview from "@/assets/projects/fem_preview.webp";
+import fem_qrcode from "@/assets/projects/fem_qrcode.webp";
 </script>
 
 <template>

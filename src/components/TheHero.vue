@@ -76,6 +76,7 @@ import Avatar from "@/assets/avatar.webp";
   border-radius: 100%;
   opacity: 0;
   animation: 0.4s ease-out forwards fadeIn;
+  max-height: 400px;
 }
 
 @media (--desktop) {
