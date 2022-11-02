@@ -70,6 +70,7 @@ defineProps(["title", "imgUrl", "repoUrl", "siteUrl", "altText"]);
 }
 
 .preview-background {
+  max-width: fit-content;
   grid-area: screenshot;
   background-color: var(--danger);
   border-radius: 3px;
