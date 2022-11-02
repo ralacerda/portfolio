@@ -6,7 +6,7 @@ const skills = {
     "GitHub",
     "Bash scripting",
     "Python scripting",
-    "Nodejs",
+    "Node",
   ],
   "Front-end": ["HTML5", "CSS3", "Tailwind", "Bootstrap", "Javascript", "Vue"],
   Personal: [
