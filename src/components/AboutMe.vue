@@ -75,7 +75,7 @@ import aboutMePicture from "../assets/pictures/about_me.webp";
 }
 
 .aboutme__picture {
-  max-width: 360px;
+  width: min(50vw, 360px);
   grid-area: photo;
   border-radius: 100%;
   box-shadow: 0px 0px 3px 4px var(--shadow);
